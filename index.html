@@ -26,12 +26,25 @@ gtag('config', 'G-MMW7708D4F');
 .gallery-title{position:relative;z-index:1;width:100%;height:100%}
 .home-page .nav{position:absolute;top:0;left:0;right:0;z-index:10;background:transparent;border-bottom-color:rgba(255,255,255,.18)}
 .home-page .gallery-hero{margin-top:0}
-@media(max-width:800px){.gallery-hero{background-image:url("marcel-dutu-mobile-poster.jpg");background-position:center center;background-size:contain;background-repeat:no-repeat;background-attachment:fixed;background-color:#171717;min-height:100vh;padding:0}.home-page .nav{background:transparent;border-bottom-color:rgba(255,255,255,.18)}.home-page .brand,.home-page .menu a,.home-page .home-contact a{color:#fff}.home-page .menu a:hover,.home-page .menu a:focus-visible{color:#f4d27a}}
+@media(max-width:800px){
+.gallery-hero{background-image:url("marcel-dutu-mobile-poster.jpg");background-position:center top;background-size:100% auto;background-repeat:no-repeat;background-attachment:scroll;background-color:#171717;min-height:100vh;padding:0}
+.home-page .nav{position:absolute!important;top:0;left:0;right:0;background:transparent!important;border:0!important;box-shadow:none!important;z-index:20}
+.home-page .navin{display:block!important;padding:0!important;min-height:0!important}
+.home-page .brandhome{display:block!important;width:100%!important}
+.home-page .menu{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px 9px!important;width:min(290px,92vw)!important;margin:10px auto 0!important;padding:0!important}
+.home-page .menu a.home-nav{display:none!important}
+.home-page .menu a.gallery-nav,.home-page .menu a.sculpture-nav,.home-page .menu a.exhibitions-nav,.home-page .menu a.about-nav{width:100%!important;height:auto!important;aspect-ratio:3.14/1!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;flex:none!important}
+.home-page .menu a.gallery-nav img,.home-page .menu a.sculpture-nav img,.home-page .menu a.exhibitions-nav img,.home-page .menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important}
+.home-page .home-contact{position:absolute!important;top:32vh!important;left:8%!important;z-index:25!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;margin:0!important;font-size:13px!important;letter-spacing:.03em!important}
+.home-page .home-contact a{color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.75)!important}
+.home-page .home-contact a[href*="wa.me"]{color:#25D366!important}
+.home-page .home-contact .sep{display:none!important}
+}
 </style>
 </head>
 <body class="home-page">
 <header class="nav"><div class="wrap navin">
-<div class="brandhome"><div class="home-contact"><a href="tel:+40751817806">+40 751 817 806</a><span class="sep">·</span><a href="https://wa.me/40751817806">WhatsApp</a></div></div>
+<div class="brandhome"><div class="home-contact"><a href="tel:+40751817806">+40 751 817 806</a><a href="https://wa.me/40751817806">WhatsApp</a></div></div>
 <nav class="menu" aria-label="Navigație principală"><a class="home-nav home-canvas-nav" href="index.html"><img src="prima-pagina-button.jpg" alt="Prima pagină"></a>
 <a class="gallery-nav" href="opere.html"><img src="galerie-button.jpg" alt="Galerie"></a><a class="sculpture-nav" href="sculptura.html"><img src="sculptura-button.jpg" alt="Sculptură"></a><a class="exhibitions-nav" href="expozitii.html"><img src="expozitii-button.jpg" alt="Expoziții"></a><a class="about-nav" href="despre.html"><img src="despre-artist-button.jpg" alt="Despre artist"></a>
 </nav>
