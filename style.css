@@ -2,3 +2,6 @@
 @media(min-width:801px){html{background:#262421}body{background-color:rgba(247,245,241,.78);background-image:url("marcel-dutu-gallery-bg.jpg");background-size:cover;background-position:center center;background-attachment:fixed;background-repeat:no-repeat}.section,.detail{background:rgba(247,245,241,.78)}.footer{background:rgba(247,245,241,.86)}}
 
 @media(max-width:800px){body.home-page{background-image:none}}
+
+.home-canvas-nav{display:flex!important;align-items:center;padding:0!important;width:195px;height:62px;flex:0 0 195px;overflow:hidden}.home-canvas-nav img{display:block;width:195px!important;height:62px!important;max-width:195px;max-height:62px;object-fit:cover;border:1px solid rgba(255,255,255,.35);box-shadow:0 2px 8px rgba(0,0,0,.35)}
+@media(max-width:800px){.home-canvas-nav{width:132px;height:42px;flex:0 0 132px}.home-canvas-nav img{width:132px!important;height:42px!important;max-width:132px;max-height:42px}}
