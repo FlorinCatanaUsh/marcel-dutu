@@ -24,3 +24,14 @@
   .menu a[aria-current="page"]{display:none!important;}
   .home-page .home-canvas-nav{display:none!important;}
 }
+
+/* Mobile: two visual buttons per row, contact below them */
+@media(max-width:800px){
+  .home-page .navin{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;padding:10px 12px 14px!important;}
+  .home-page .brandhome{display:flex!important;flex-direction:column!important;align-items:center!important;width:100%!important;}
+  .home-page .home-canvas-nav{display:none!important;}
+  .home-page .menu{order:1!important;display:grid!important;grid-template-columns:repeat(2,132px)!important;grid-auto-rows:42px!important;gap:7px 10px!important;width:274px!important;justify-content:center!important;align-items:center!important;overflow:visible!important;}
+  .home-page .menu a.gallery-nav,.home-page .menu a.sculpture-nav,.home-page .menu a.exhibitions-nav,.home-page .menu a.about-nav{width:132px!important;height:42px!important;min-width:132px!important;max-width:132px!important;min-height:42px!important;max-height:42px!important;flex:none!important;}
+  .home-page .home-contact{order:2!important;display:flex!important;margin:4px 0 0!important;justify-content:center!important;font-size:12px!important;gap:10px!important;color:#fff!important;}
+  .home-page .home-contact a[href*="wa.me"]{color:#25D366!important;}
+}
