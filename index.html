@@ -41,6 +41,117 @@ gtag('config', 'G-MMW7708D4F');
 .home-page .home-contact .sep{display:none!important}
 }
 </style>
+<style>
+/* FINAL MOBILE HOMEPAGE LAYOUT */
+@media(max-width:800px){
+  body.home-page{
+    background:#171717!important;
+    overflow-x:hidden!important;
+  }
+  .home-page .gallery-hero{
+    position:relative!important;
+    min-height:100vh!important;
+    margin:0!important;
+    padding:0!important;
+    background-image:url("marcel-dutu-gallery-bg.jpg"),url("marcel-dutu-mobile-poster.jpg")!important;
+    background-position:center top,center 245px!important;
+    background-size:100% 430px,100% auto!important;
+    background-repeat:no-repeat,no-repeat!important;
+    background-attachment:scroll!important;
+  }
+  .home-page .nav{
+    position:absolute!important;
+    top:0!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    z-index:100!important;
+  }
+  .home-page .navin{
+    display:block!important;
+    width:100%!important;
+    min-height:0!important;
+    padding:0!important;
+    margin:0!important;
+  }
+  .home-page .brandhome{
+    display:block!important;
+    width:100%!important;
+    height:0!important;
+  }
+  .home-page .menu{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:repeat(2,auto)!important;
+    gap:6px 8px!important;
+    width:calc(100vw - 12px)!important;
+    margin:10px auto 0!important;
+    padding:0!important;
+    position:relative!important;
+    z-index:101!important;
+  }
+  .home-page .menu .home-nav{
+    display:none!important;
+  }
+  .home-page .menu a.gallery-nav,
+  .home-page .menu a.sculpture-nav,
+  .home-page .menu a.exhibitions-nav,
+  .home-page .menu a.about-nav{
+    display:flex!important;
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:3.14/1!important;
+    min-width:0!important;
+    max-width:none!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+  }
+  .home-page .menu a picture{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+  }
+  .home-page .menu a img{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+    min-height:0!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  .home-page .home-contact{
+    position:absolute!important;
+    top:32vh!important;
+    left:8%!important;
+    z-index:102!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:4px!important;
+    margin:0!important;
+    padding:0!important;
+    font-size:13px!important;
+    line-height:1.25!important;
+  }
+  .home-page .home-contact a{
+    color:#fff!important;
+    text-shadow:0 1px 4px rgba(0,0,0,.75)!important;
+  }
+  .home-page .home-contact a[href*="wa.me"]{
+    color:#25D366!important;
+  }
+}
+</style>
 </head>
 <body class="home-page">
 <header class="nav"><div class="wrap navin">
