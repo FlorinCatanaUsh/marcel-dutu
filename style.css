@@ -42,3 +42,17 @@
   .home-page .menu a.gallery-nav,.home-page .menu a.sculpture-nav,.home-page .menu a.exhibitions-nav,.home-page .menu a.about-nav{width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;aspect-ratio:3.14/1!important;min-height:0!important;max-height:none!important;}
   .home-page .menu a.gallery-nav img,.home-page .menu a.sculpture-nav img,.home-page .menu a.exhibitions-nav img,.home-page .menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important;}
 }
+
+/* Unitary navigation: four visible buttons on every page; current page is hidden */
+.menu a[aria-current="page"]{display:none!important;}
+.home-page .menu .home-nav{display:none!important;}
+.menu .home-nav{display:flex;align-items:center;width:195px;height:62px;min-width:195px;max-width:195px;min-height:62px;max-height:62px;flex:0 0 195px;overflow:hidden;padding:0!important;}
+.menu .home-nav img{display:block;width:195px!important;height:62px!important;min-width:195px;max-width:195px;min-height:62px;max-height:62px;object-fit:cover;border:1px solid rgba(255,255,255,.35);box-shadow:0 2px 8px rgba(0,0,0,.35)}
+@media(max-width:800px){
+  .menu .home-nav{width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;flex:none!important;aspect-ratio:3.14/1!important;}
+  .menu .home-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important;}
+  .home-page .menu{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .menu{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px 8px!important;width:min(280px,92vw)!important;}
+  .menu a.gallery-nav,.menu a.sculpture-nav,.menu a.exhibitions-nav,.menu a.about-nav{width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;aspect-ratio:3.14/1!important;min-height:0!important;max-height:none!important;flex:none!important;}
+  .menu a.gallery-nav img,.menu a.sculpture-nav img,.menu a.exhibitions-nav img,.menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important;}
+}
