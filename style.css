@@ -56,3 +56,61 @@
   .menu a.gallery-nav,.menu a.sculpture-nav,.menu a.exhibitions-nav,.menu a.about-nav{width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;aspect-ratio:3.14/1!important;min-height:0!important;max-height:none!important;flex:none!important;}
   .menu a.gallery-nav img,.menu a.sculpture-nav img,.menu a.exhibitions-nav img,.menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important;}
 }
+
+
+/* Mobile navigation: identical 2x2 layout on every page */
+@media(max-width:800px){
+  .navin{display:block!important;min-height:0!important;padding:10px 0 0!important;}
+  .menu{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-auto-rows:auto!important;
+    gap:6px 8px!important;
+    width:calc(100vw - 12px)!important;
+    max-width:none!important;
+    margin:0 auto!important;
+    padding:0!important;
+    flex-wrap:initial!important;
+    justify-content:initial!important;
+    align-items:stretch!important;
+    overflow:visible!important;
+  }
+  .menu a,
+  .menu .home-nav,
+  .menu .gallery-nav,
+  .menu .sculpture-nav,
+  .menu .exhibitions-nav,
+  .menu .about-nav{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    flex:none!important;
+    aspect-ratio:3.14/1!important;
+    overflow:hidden!important;
+    padding:0!important;
+    margin:0!important;
+  }
+  .menu a picture{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+  }
+  .menu a img{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+    min-height:0!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  .menu a[aria-current="page"]{display:none!important;}
+  .home-page .menu .home-nav{display:none!important;}
+}
