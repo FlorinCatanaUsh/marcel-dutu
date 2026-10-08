@@ -5,3 +5,8 @@
 
 .home-canvas-nav{display:flex!important;align-items:center;padding:0!important;width:195px;height:62px;flex:0 0 195px;overflow:hidden}.home-canvas-nav img{display:block;width:195px!important;height:62px!important;max-width:195px;max-height:62px;object-fit:cover;border:1px solid rgba(255,255,255,.35);box-shadow:0 2px 8px rgba(0,0,0,.35)}
 @media(max-width:800px){.home-canvas-nav{width:132px;height:42px;flex:0 0 132px}.home-canvas-nav img{width:132px!important;height:42px!important;max-width:132px;max-height:42px}}
+
+/* Normalize the Prima pagină canvas button with the other visual menu buttons */
+.navin > .home-canvas-nav{display:flex!important;align-items:center!important;width:195px!important;min-width:195px!important;max-width:195px!important;height:62px!important;min-height:62px!important;max-height:62px!important;flex:0 0 195px!important;overflow:hidden!important;padding:0!important;margin:0!important;box-sizing:border-box!important;}
+.navin > .home-canvas-nav img{display:block!important;width:195px!important;min-width:195px!important;max-width:195px!important;height:62px!important;min-height:62px!important;max-height:62px!important;object-fit:cover!important;margin:0!important;padding:0!important;}
+@media(max-width:800px){.navin > .home-canvas-nav{width:132px!important;min-width:132px!important;max-width:132px!important;height:42px!important;min-height:42px!important;max-height:42px!important;flex:0 0 132px!important}.navin > .home-canvas-nav img{width:132px!important;min-width:132px!important;max-width:132px!important;height:42px!important;min-height:42px!important;max-height:42px!important}}
