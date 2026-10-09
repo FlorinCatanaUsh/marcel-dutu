@@ -19,8 +19,12 @@ gtag('config', 'G-MMW7708D4F');
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 <style>
-.home-contact{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:7px;font-size:12px;letter-spacing:.04em}
-.home-contact a{color:inherit;text-decoration:none}.home-contact a[href*="wa.me"]{color:#25D366}.home-contact .sep{opacity:.45}
+.contact-canvas{display:block;width:min(390px,90vw);height:auto;margin:0;line-height:0;text-decoration:none;filter:drop-shadow(0 4px 5px rgba(0,0,0,.35));transition:transform .18s ease}
+.contact-canvas:hover,.contact-canvas:focus-visible{transform:scale(1.025)}
+.contact-canvas svg{display:block;width:100%;height:auto}
+.home-page .brandhome{position:relative}
+@media(min-width:801px){.home-page .contact-canvas{width:340px;margin:12px auto 0}}
+
 .gallery-hero{position:relative;min-height:100vh;background-color:#171717;background-image:url("marcel-dutu-desktop-poster.jpg");background-position:center center;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;display:flex;align-items:flex-start;justify-content:center;padding:0 25px}
 .gallery-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 50%,rgba(0,0,0,.16))}
 .gallery-title{position:relative;z-index:1;width:100%;height:100%}
@@ -35,130 +39,34 @@ gtag('config', 'G-MMW7708D4F');
 .home-page .menu a.home-nav{display:none!important}
 .home-page .menu a.gallery-nav,.home-page .menu a.sculpture-nav,.home-page .menu a.exhibitions-nav,.home-page .menu a.about-nav{width:100%!important;height:auto!important;aspect-ratio:3.14/1!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;flex:none!important}
 .home-page .menu a.gallery-nav img,.home-page .menu a.sculpture-nav img,.home-page .menu a.exhibitions-nav img,.home-page .menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important}
-.home-page .home-contact{position:absolute!important;top:calc(58vh - 90px)!important;left:8%!important;z-index:25!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;margin:0!important;font-size:11px!important;letter-spacing:.03em!important}
-.home-page .home-contact a{color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.75)!important}
-.home-page .home-contact a[href*="wa.me"]{color:#25D366!important}
-.home-page .home-contact .sep{display:none!important}
-}
-</style>
-<style>
-/* FINAL MOBILE HOMEPAGE LAYOUT */
-@media(max-width:800px){
-  body.home-page{
-    background:#171717!important;
-    overflow-x:hidden!important;
-  }
-  .home-page .gallery-hero{
-    position:relative!important;
-    min-height:100vh!important;
-    margin:0!important;
-    padding:0!important;
-    background-image:url("marcel-dutu-mobile-poster.jpg"),url("marcel-dutu-gallery-bg.jpg")!important;
-    background-position:center 120px,center top!important;
-    background-size:100% auto,100% 430px!important;
-    background-repeat:no-repeat,no-repeat!important;
-    background-attachment:scroll!important;
-  }
-  .home-page .nav{
-    position:absolute!important;
-    top:0!important;
-    left:0!important;
-    right:0!important;
-    width:100%!important;
-    background:transparent!important;
-    border:0!important;
-    box-shadow:none!important;
-    z-index:100!important;
-  }
-  .home-page .navin{
-    display:block!important;
-    width:100%!important;
-    min-height:0!important;
-    padding:0!important;
-    margin:0!important;
-  }
-  .home-page .brandhome{
-    display:block!important;
-    width:100%!important;
-    height:0!important;
-  }
-  .home-page .menu{
-    display:grid!important;
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    grid-template-rows:repeat(2,auto)!important;
-    gap:6px 8px!important;
-    width:calc(100vw - 12px)!important;
-    margin:10px auto 0!important;
-    padding:0!important;
-    position:relative!important;
-    z-index:101!important;
-  }
-  .home-page .menu .home-nav{
-    display:none!important;
-  }
-  .home-page .menu a.gallery-nav,
-  .home-page .menu a.sculpture-nav,
-  .home-page .menu a.exhibitions-nav,
-  .home-page .menu a.about-nav{
-    display:flex!important;
-    width:100%!important;
-    height:auto!important;
-    aspect-ratio:3.14/1!important;
-    min-width:0!important;
-    max-width:none!important;
-    min-height:0!important;
-    max-height:none!important;
-    margin:0!important;
-    padding:0!important;
-    overflow:hidden!important;
-  }
-  .home-page .menu a picture{
-    display:block!important;
-    width:100%!important;
-    height:100%!important;
-  }
-  .home-page .menu a img{
-    display:block!important;
-    width:100%!important;
-    height:100%!important;
-    min-width:0!important;
-    max-width:none!important;
-    min-height:0!important;
-    max-height:none!important;
-    object-fit:cover!important;
-    border:0!important;
-    box-shadow:none!important;
-  }
-  .home-page .home-contact{
-    position:absolute!important;
-    top:calc(58vh - 90px)!important;
-    left:8%!important;
-    z-index:102!important;
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:4px!important;
-    margin:0!important;
-    padding:0!important;
-    font-size:13px!important;
-    line-height:1.2!important;
-    font-family:"Comic Sans MS","Comic Sans",cursive!important;
-    font-weight:700!important;
-  }
-  .home-page .home-contact a{
-    color:#fff!important;
-    text-shadow:0 1px 4px rgba(0,0,0,.75)!important;
-  }
-  .home-page .home-contact a[href*="wa.me"]{
-    color:#25D366!important;
-  }
-  .home-page .home-contact .orders-label{color:#fff!important;}
+.home-page .contact-canvas{position:absolute!important;top:calc(58vh - 90px)!important;left:4%!important;z-index:102!important;width:92vw!important;max-width:520px!important;margin:0!important}
+@media(min-width:801px){.home-page .contact-canvas{position:absolute!important;top:42vh!important;left:5%!important;width:340px!important;margin:0!important}}
 }
 </style>
 </head>
 <body class="home-page">
 <header class="nav"><div class="wrap navin">
-<div class="brandhome"><div class="home-contact"><span class="orders-label">Pentru comenzi</span><a href="tel:+40751817806">+40 751 817 806</a><a href="https://wa.me/40751817806">WhatsApp</a></div></div>
+<div class="brandhome"><a class="contact-canvas" href="https://wa.me/40751817806" target="_blank" rel="noopener" aria-label="Pentru comenzi: contactează pe WhatsApp la +40 751 817 806">
+<svg viewBox="0 0 900 450" role="img" aria-labelledby="contactTitle">
+<title id="contactTitle">Pentru comenzi — +40 751 817 806 — WhatsApp</title>
+<defs>
+ <linearGradient id="canvasPaint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6d7"/><stop offset=".55" stop-color="#f5e5c2"/><stop offset="1" stop-color="#fffaf0"/></linearGradient>
+ <linearGradient id="yellowPaint" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd54a"/><stop offset="1" stop-color="#ff9e17"/></linearGradient>
+ <linearGradient id="greenPaint" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#48e26e"/><stop offset="1" stop-color="#087b35"/></linearGradient>
+ <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/></filter>
+ <filter id="textShadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".5"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<path d="M38 54 L73 24 160 36 235 18 330 33 440 17 560 35 680 22 815 32 862 58 850 392 806 420 650 409 510 428 360 410 210 426 76 408 37 380Z" fill="url(#canvasPaint)" stroke="#a64a25" stroke-width="12" filter="url(#rough)"/>
+<path d="M42 66 Q160 18 285 57 T535 53 T855 59 L842 166 Q710 180 575 164 T290 177 T47 160Z" fill="url(#yellowPaint)" stroke="#e36b19" stroke-width="5" filter="url(#rough)"/>
+<path d="M48 55 L95 31 150 40 M754 36 L813 26 855 58 M40 340 L66 395 110 412 M798 408 L851 378 859 330" fill="none" stroke="#1688c9" stroke-width="20" stroke-linecap="round"/>
+<path d="M48 375 L80 412 145 408 M760 413 L825 399 852 363" fill="none" stroke="#e53c26" stroke-width="16" stroke-linecap="round"/>
+<text x="450" y="130" text-anchor="middle" font-family="'Comic Sans MS',cursive" font-size="66" font-weight="900" fill="#151515" stroke="#151515" stroke-width="1" filter="url(#textShadow)">Pentru comenzi</text>
+<text x="450" y="255" text-anchor="middle" font-family="'Comic Sans MS',cursive" font-size="76" font-weight="900" fill="#111" stroke="#111" stroke-width="1" filter="url(#textShadow)">+40 751 817 806</text>
+<path d="M140 300 Q260 270 390 301 T650 298 T790 302 L800 374 Q670 393 550 377 T300 382 T120 375Z" fill="url(#greenPaint)" stroke="#146b32" stroke-width="5" filter="url(#rough)"/>
+<circle cx="220" cy="338" r="48" fill="#fff" stroke="#fff" stroke-width="5"/>
+<path d="M190 312 Q182 323 194 343 Q211 368 236 360 L247 346 227 333 216 345 Q203 338 201 326Z" fill="#128c43"/>
+<text x="510" y="365" text-anchor="middle" font-family="'Comic Sans MS',cursive" font-size="66" font-weight="900" fill="#fff" stroke="#0b612b" stroke-width="2" filter="url(#textShadow)">WhatsApp</text>
+</svg></a></div>
 <nav class="menu" aria-label="Navigație principală"><a class="home-nav home-canvas-nav" href="index.html"><picture><source media="(max-width: 800px)" srcset="prima-pagina-button.png"><img src="prima-pagina-button.png" alt="Prima pagină"></picture></a>
 <a class="gallery-nav" href="opere.html"><picture><source media="(max-width: 800px)" srcset="galerie-button.jpg"><img src="galerie-button.jpg" alt="Galerie"></picture></a><a class="sculpture-nav" href="sculptura.html"><picture><source media="(max-width: 800px)" srcset="sculptura-button.png"><img src="sculptura-button.png" alt="Sculptură"></picture></a><a class="exhibitions-nav" href="expozitii.html"><picture><source media="(max-width: 800px)" srcset="expozitii-button.png"><img src="expozitii-button.png" alt="Expoziții"></picture></a><a class="about-nav" href="despre.html"><picture><source media="(max-width: 800px)" srcset="despre-artist-button.png"><img src="despre-artist-button.png" alt="Despre artist"></picture></a>
 </nav>
