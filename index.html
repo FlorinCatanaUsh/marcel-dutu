@@ -256,7 +256,30 @@ gtag('config', 'G-MMW7708D4F');
   }
   /* The mobile poster already contains the artist title and subtitle. */
   .home-page .gallery-title{display:none!important;}
-  .home-page .home-contact{display:none!important}
+  .home-page .home-contact{
+    position:absolute!important;
+    top:54svh!important;
+    left:7%!important;
+    z-index:120!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:3px!important;
+    margin:0!important;
+    padding:0!important;
+    font-family:"Comic Sans MS","Comic Sans",cursive!important;
+    font-size:clamp(15px,4.2vw,21px)!important;
+    line-height:1.12!important;
+    font-weight:700!important;
+    letter-spacing:.01em!important;
+  }
+  .home-page .home-contact .orders-label,
+  .home-page .home-contact a{
+    color:#fff!important;
+    text-shadow:0 2px 5px rgba(0,0,0,.9)!important;
+  }
+  .home-page .home-contact a[href*="wa.me"]{color:#25D366!important}
+  .home-page .home-contact .sep{display:none!important}
   .home-page .desktop-whatsapp-hotspot{display:none!important}
   .home-page .footer{
     position:absolute!important;left:0!important;right:0!important;bottom:0!important;
