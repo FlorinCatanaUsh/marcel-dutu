@@ -174,6 +174,127 @@ gtag('config', 'G-MMW7708D4F');
   .home-page .home-contact .orders-label{color:#fff!important;}
 }
 </style>
+<style>
+/* Mobile homepage: fit the full composition into one screen */
+@media (max-width:800px){
+  html, body.home-page{
+    width:100%;
+    height:100%;
+    min-height:0!important;
+    margin:0!important;
+    overflow:hidden!important;
+    overscroll-behavior:none;
+  }
+  body.home-page{
+    height:100vh!important;
+    height:100svh!important;
+    position:relative!important;
+    background-image:url("marcel-dutu-gallery-bg.jpg")!important;
+    background-size:cover!important;
+    background-position:center!important;
+  }
+  .home-page .nav{
+    position:absolute!important;
+    top:0!important;left:0!important;right:0!important;
+    height:clamp(112px, 17svh, 148px)!important;
+    overflow:visible!important;
+    z-index:100!important;
+  }
+  .home-page .navin{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:5px 6px 0!important;
+  }
+  .home-page .brandhome{height:0!important;display:block!important}
+  .home-page .menu{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:repeat(2,min-content)!important;
+    gap:5px 7px!important;
+    width:100%!important;
+    margin:0 auto!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+  .home-page .menu .home-nav{display:none!important}
+  .home-page .menu a.gallery-nav,
+  .home-page .menu a.sculpture-nav,
+  .home-page .menu a.exhibitions-nav,
+  .home-page .menu a.about-nav{
+    display:flex!important;
+    width:100%!important;height:auto!important;
+    min-width:0!important;max-width:none!important;
+    min-height:0!important;max-height:none!important;
+    aspect-ratio:3.14/1!important;
+    margin:0!important;padding:0!important;overflow:hidden!important;
+  }
+  .home-page .menu a picture{display:block!important;width:100%!important;height:100%!important}
+  .home-page .menu a img{
+    display:block!important;width:100%!important;height:100%!important;
+    min-width:0!important;max-width:none!important;
+    min-height:0!important;max-height:none!important;
+    object-fit:cover!important;border:0!important;box-shadow:none!important;
+  }
+  .home-page main{margin:0!important;padding:0!important}
+  .home-page .gallery-hero{
+    position:absolute!important;
+    top:clamp(112px, 17svh, 148px)!important;
+    left:0!important;right:0!important;bottom:31px!important;
+    width:100%!important;max-width:none!important;
+    min-height:0!important;height:auto!important;
+    margin:0!important;padding:0!important;
+    background-color:transparent!important;
+    background-image:url("marcel-dutu-mobile-poster.jpg")!important;
+    background-position:center bottom!important;
+    background-size:100% calc(100% - 48px)!important;
+    background-repeat:no-repeat!important;
+    background-attachment:scroll!important;
+    display:block!important;
+  }
+  .home-page .gallery-title{
+    position:absolute!important;top:0!important;left:0!important;right:0!important;
+    height:45px!important;width:100%!important;
+    display:block!important;text-align:center!important;z-index:2!important;
+  }
+  .home-page .gallery-title:before{
+    content:"Marcel Duțu"!important;
+    display:block!important;
+    font-family:Georgia,"Times New Roman",serif!important;
+    font-size:clamp(27px,7.3vw,40px)!important;
+    line-height:1.05!important;font-weight:700!important;
+    letter-spacing:-.035em!important;color:#f7f5f1!important;
+    text-shadow:0 2px 5px rgba(0,0,0,.8)!important;
+    white-space:nowrap!important;
+  }
+  .home-page .gallery-title:after{
+    content:"PICTURĂ  |  SCULPTURĂ  |  ARTĂ CONTEMPORANĂ"!important;
+    display:block!important;margin-top:2px!important;
+    font-size:clamp(7px,1.9vw,10px)!important;
+    letter-spacing:.15em!important;color:#f7f5f1!important;
+    text-shadow:0 1px 4px rgba(0,0,0,.9)!important;
+  }
+  .home-page .home-contact{display:none!important}
+  .home-page .desktop-whatsapp-hotspot{display:none!important}
+  .home-page .footer{
+    position:absolute!important;left:0!important;right:0!important;bottom:0!important;
+    height:31px!important;min-height:31px!important;
+    padding:0!important;margin:0!important;
+    display:flex!important;align-items:center!important;
+    font-size:clamp(9px,2.8vw,12px)!important;
+    white-space:nowrap!important;overflow:hidden!important;
+    color:#fff!important;background:rgba(20,20,20,.55)!important;
+    border-top:1px solid rgba(255,255,255,.25)!important;
+    text-shadow:0 1px 3px rgba(0,0,0,.9)!important;
+  }
+  .home-page .footer .wrap{
+    width:100%!important;max-width:none!important;
+    padding:0 10px!important;margin:0!important;
+  }
+}
+</style>
 </head>
 <body class="home-page">
 <header class="nav"><div class="wrap navin">
