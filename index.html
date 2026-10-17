@@ -62,6 +62,11 @@ body.home-page{background:#211811;margin:0}
 .poster-hotspots{position:absolute;inset:0;display:block}
 .poster-hotspots a{position:absolute;display:block;line-height:normal;background:transparent;border-radius:8px}
 .poster-hotspots a:focus-visible{outline:3px solid #d2aa65;outline-offset:2px;background:rgba(255,255,255,.08)}
+.poster-quote{position:absolute;left:7%;right:7%;top:76%;height:12%;display:flex;align-items:center;justify-content:center;padding:4px 8px;text-align:center;pointer-events:none}
+.poster-quote .quote-text{max-width:900px;margin:0;color:#fff0d8;font:italic clamp(12px,2.6vw,26px)/1.3 Georgia,'Times New Roman',serif;text-shadow:0 2px 5px rgba(0,0,0,.95),0 0 12px rgba(0,0,0,.8);opacity:1;transition:opacity .6s ease}
+.poster-quote .quote-text.is-fading{opacity:0}
+@media(max-width:699px){.poster-quote{top:76%;height:12%;left:6%;right:6%;padding:3px 5px}.poster-quote .quote-text{font-size:clamp(12px,3.6vw,20px);line-height:1.25}}
+@media(prefers-reduced-motion:reduce){.poster-quote .quote-text{transition:none}}
 .quote-strip{width:100%;max-width:1100px;margin:0 auto;padding:24px 20px 30px;text-align:center;background:linear-gradient(180deg,#2c2018,#17110d);border-top:1px solid rgba(214,174,111,.55);min-height:112px;display:flex;align-items:center;justify-content:center}
 .quote-text{max-width:850px;margin:0;color:#f7ead5;font:italic clamp(16px,2.5vw,25px)/1.45 Georgia,'Times New Roman',serif;text-shadow:0 2px 8px rgba(0,0,0,.45);opacity:1;transition:opacity .6s ease}
 .quote-text.is-fading{opacity:0}
@@ -88,11 +93,10 @@ body.home-page{background:#211811;margin:0}
 </div>
 <a class="poster-call" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"></a>
 <a class="poster-whatsapp" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Marcel Duțu"></a>
+<div class="poster-quote" aria-label="Citate despre artă"><p class="quote-text" id="art-quote" aria-live="polite">„Arta începe acolo unde cuvintele nu mai sunt de ajuns.”</p></div>
 </nav>
 </main>
-<section class="quote-strip" aria-label="Citate despre artă">
-<p class="quote-text" id="art-quote" aria-live="polite"><span class="quote-mark">„</span>Arta începe acolo unde cuvintele nu mai sunt de ajuns.<span class="quote-mark">”</span></p>
-</section>
+
 <script>
 (function(){
   const quoteEl = document.getElementById('art-quote');
