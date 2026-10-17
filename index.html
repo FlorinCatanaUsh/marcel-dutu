@@ -9,7 +9,7 @@
 <meta property="og:title" content="Marcel Duțu | Artist plastic și sculptor">
 <meta property="og:description" content="Lucrări originale, unice prin realizare, moderne și surprinzătoare.">
 <meta property="og:url" content="https://marceldutu.art/">
-<meta property="og:image" content="https://marceldutu.art/marcel-dutu-home-bg.jpg">
+<meta property="og:image" content="https://marceldutu.art/marcel-dutu-mobile-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://marceldutu.art/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -55,35 +55,34 @@ body.home-page{margin:0;min-height:100vh;background:#211811;color:var(--cream);f
 </style>
 </head>
 <body class="home-page">
-<div class="home-shell">
-<div class="glass-poster">
-<div class="glass-reflection" aria-hidden="true"></div>
-<header class="home-header">
-<a class="home-brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu</a>
-<p class="home-subtitle">Artist plastic și sculptor</p>
-<div class="header-ornament" aria-hidden="true"><span>❧</span></div>
-<nav class="home-tabs" aria-label="Navigație principală">
-<a href="opere.html">Galerie</a>
-<a href="sculptura.html">Sculptură</a>
-<a href="expozitii.html">Expoziții</a>
-<a href="despre.html">Despre artist</a>
+<style>
+body.home-page{background:#211811;margin:0}
+.poster-page{width:100%;max-width:1100px;margin:0 auto;position:relative;line-height:0;box-shadow:0 12px 45px rgba(0,0,0,.4)}
+.poster-page picture,.poster-page img{display:block;width:100%;height:auto}
+.poster-hotspots{position:absolute;inset:0;display:block}
+.poster-hotspots a{position:absolute;display:block;line-height:normal;background:transparent;border-radius:8px}
+.poster-hotspots a:focus-visible{outline:3px solid #d2aa65;outline-offset:2px;background:rgba(255,255,255,.08)}
+.poster-tabs{left:3%;right:3%;top:12%;height:5%;display:flex}
+.poster-tabs a{position:relative;top:0;height:100%;width:25%}
+.poster-call{left:5%;bottom:1.2%;width:44%;height:6.5%}
+.poster-whatsapp{right:5%;bottom:1.2%;width:44%;height:6.5%}
+@media(min-width:700px){.poster-tabs{top:12.2%;height:6%}.poster-call,.poster-whatsapp{bottom:1.2%;height:7%}}
+</style>
+<main class="poster-page" aria-label="Marcel Duțu — artist plastic și sculptor">
+<picture>
+<source media="(max-width: 699px)" srcset="marcel-dutu-mobile-poster.jpg">
+<img src="marcel-dutu-desktop-poster.jpg" alt="Poster Marcel Duțu pictând în atelier, cu taburi Galerie, Sculptură, Expoziții, Despre artist și butoane de contact." fetchpriority="high">
+</picture>
+<nav class="poster-hotspots" aria-label="Navigație și contact">
+<div class="poster-tabs">
+<a href="opere.html" aria-label="Galerie"></a>
+<a href="sculptura.html" aria-label="Sculptură"></a>
+<a href="expozitii.html" aria-label="Expoziții"></a>
+<a href="despre.html" aria-label="Despre artist"></a>
+</div>
+<a class="poster-call" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"></a>
+<a class="poster-whatsapp" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Marcel Duțu"></a>
 </nav>
-</header>
-<main class="poster-content">
-<p class="poster-tagline">Lucrări originale, unice prin realizare,<br>moderne și surprinzătoare</p>
-<div class="poster-rule" aria-hidden="true"></div>
-<div class="poster-spacer"></div>
-<p class="poster-contact-copy">Pentru comenzi online sau discuții cu artistul:</p>
-<div class="contact-buttons" aria-label="Butoane de contact">
-<a class="contact-button call" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9.1 3c.7-.1 1.3.3 1.5.9l1 2.8c.2.6 0 1.2-.5 1.6l-1.5 1.2a14 14 0 0 0 5 5l1.2-1.5c.4-.5 1-.7 1.6-.5l2.8 1c.6.2 1 .8.9 1.5l-.5 2.5c-.1.8-.8 1.4-1.6 1.4C10 19 5 14 5 7.1c0-.8.6-1.5 1.6-1.6Z"/></svg><span>Sună acum</span>
-</a>
-<a class="contact-button whatsapp" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="Scrie pe WhatsApp la +40 751 817 806">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9a8.4 8.4 0 1 1 16.1-3.9Z"/><path d="M8.6 7.8c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.3-.1.5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.6-.5.4-1.1.6-1.8.4-1-.2-2.2-.8-3.4-1.9-1.4-1.3-2.3-2.9-2.5-3.9-.2-.8.1-1.6.7-2.1Z"/></svg><span>WhatsApp</span>
-</a>
-</div>
 </main>
-</div>
-</div>
 </body>
 </html>
