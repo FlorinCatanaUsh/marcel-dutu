@@ -8,14 +8,13 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-MMW7708D4F');
 </script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Marcel Duțu | Tablouri originale, pictură și sculptură</title>
-<meta name="description" content="Descoperă tablouri originale și sculpturi de Marcel Duțu. Pictură și tehnică mixtă pe pânză, sculptură la comandă și lucrări de artă disponibile pentru achiziție.">
+<meta name="description" content="Descoperă tablouri originale și sculpturi de Marcel Duțu. Pictură și tehnică mixtă pe pânză, sculptură și lucrări prezentate în expoziții.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Marcel Duțu | Tablouri originale, pictură și sculptură">
-<meta property="og:description" content="Tablouri originale, pictură și tehnică mixtă pe pânză, sculptură la comandă și lucrări de artă de Marcel Duțu.">
+<meta property="og:title" content="Marcel Duțu | Artist plastic">
+<meta property="og:description" content="Pictură, tehnică mixtă și sculptură. Descoperă portofoliul artistului Marcel Duțu.">
 <meta property="og:url" content="https://marceldutu.art/">
 <meta property="og:image" content="https://marceldutu.art/marcel-dutu-desktop-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,289 +22,136 @@ gtag('config', 'G-MMW7708D4F');
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 <style>
-.home-contact{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:7px;font-size:12px;letter-spacing:.04em}
-@media(min-width:801px){.home-page .home-contact{display:none!important}}
-.home-contact a{color:inherit;text-decoration:none}.home-contact a[href*="wa.me"]{color:#25D366}.home-contact .sep{opacity:.45}
-.gallery-hero{position:relative;min-height:100vh;background-color:#171717;background-image:url("marcel-dutu-desktop-poster.jpg");background-position:center 35%;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;display:flex;align-items:flex-start;justify-content:center;padding:0 25px}
-.gallery-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 50%,rgba(0,0,0,.16))}
-.gallery-title{position:relative;z-index:1;width:100%;height:100%}
-.seo-home-title{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
-@media(min-width:801px){.desktop-whatsapp-hotspot{position:absolute;z-index:5;left:12%;top:25%;width:24%;height:30%;display:block;cursor:pointer;background:transparent} .desktop-whatsapp-hotspot:focus-visible{outline:3px solid #25D366;outline-offset:-6px}} 
-@media(max-width:800px){.desktop-whatsapp-hotspot{display:none!important}}
-.home-page .nav{position:absolute;top:0;left:0;right:0;z-index:10;background:transparent;border-bottom-color:rgba(255,255,255,.18)}
-.home-page .gallery-hero{margin-top:0}
-@media(max-width:800px){
-.gallery-hero{background-image:url("marcel-dutu-mobile-poster.jpg");background-image:url("marcel-dutu-gallery-bg.jpg"),url("marcel-dutu-mobile-poster.jpg");background-position:center top,center 245px;background-size:100% 430px,100% auto;background-repeat:no-repeat,no-repeat;background-attachment:scroll;background-color:#171717;min-height:100vh;padding:0}
-.home-page .nav{position:absolute!important;top:0;left:0;right:0;background:transparent!important;border:0!important;box-shadow:none!important;z-index:20}
-.home-page .navin{display:block!important;padding:0!important;min-height:0!important}
-.home-page .brandhome{display:block!important;width:100%!important}
-.home-page .menu{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px 8px!important;width:calc(100vw - 12px)!important;margin:10px auto 0!important;padding:0!important}
-.home-page .menu a.home-nav{display:none!important}
-.home-page .menu a.gallery-nav,.home-page .menu a.sculpture-nav,.home-page .menu a.exhibitions-nav,.home-page .menu a.about-nav{width:100%!important;height:auto!important;aspect-ratio:3.14/1!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;flex:none!important}
-.home-page .menu a.gallery-nav img,.home-page .menu a.sculpture-nav img,.home-page .menu a.exhibitions-nav img,.home-page .menu a.about-nav img{width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;object-fit:cover!important}
-.home-page .home-contact{position:absolute!important;top:calc(58vh - 90px)!important;left:8%!important;z-index:25!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:7px!important;margin:0!important;font-size:19px!important;line-height:1.15!important;letter-spacing:.02em!important;font-family:"Comic Sans MS","Comic Sans",cursive!important;font-weight:700!important}
-.home-page .home-contact a{color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.75)!important}
-.home-page .home-contact a[href*="wa.me"]{color:#25D366!important}
-.home-page .home-contact .sep{display:none!important}
+:root{--home-ink:#20201e;--home-paper:#f5f2ec;--home-muted:#716c64;--home-line:#dcd5ca;--home-accent:#8b4034}
+body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-family:Arial,Helvetica,sans-serif}
+.home-page *{box-sizing:border-box}
+.home-page .nav{position:relative;top:auto;z-index:5;background:rgba(245,242,236,.97);border-bottom:1px solid var(--home-line);backdrop-filter:blur(12px)}
+.home-page .navin{width:min(1320px,100%);min-height:82px;margin:0 auto;padding:14px 38px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.home-brand{font:600 25px/1 Georgia,'Times New Roman',serif;letter-spacing:.04em;white-space:nowrap}
+.home-brand span{display:block;margin-top:7px;font:10px/1.2 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--home-muted)}
+.home-page .menu{display:flex;align-items:center;justify-content:flex-end;gap:clamp(14px,2.4vw,34px);flex-wrap:wrap;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.home-page .menu a{display:inline-block;padding:9px 0;border-bottom:1px solid transparent;white-space:nowrap}
+.home-page .menu a:hover,.home-page .menu a:focus-visible{color:var(--home-accent);border-color:var(--home-accent)}
+.home-page .menu .home-nav{display:none!important}
+.home-page .menu .gallery-nav,.home-page .menu .sculpture-nav,.home-page .menu .exhibitions-nav,.home-page .menu .about-nav{width:auto!important;height:auto!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;flex:none!important;aspect-ratio:auto!important;overflow:visible!important}
+.home-page .menu picture{display:none!important}
+.home-page main{width:100%;margin:0!important;padding:0!important}
+.home-hero{width:min(1320px,100%);margin:0 auto;padding:clamp(38px,6vw,84px) 38px 74px;display:grid;grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);align-items:center;gap:clamp(36px,6vw,90px);min-height:calc(100svh - 83px)}
+.home-copy{position:relative;z-index:2;padding:8px 0}
+.home-kicker{display:flex;align-items:center;gap:12px;margin:0 0 25px;color:var(--home-accent);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.home-kicker:before{content:"";display:block;width:32px;height:1px;background:currentColor}
+.home-title{max-width:520px;margin:0;font:400 clamp(52px,6.4vw,94px)/.93 Georgia,'Times New Roman',serif;letter-spacing:-.055em}
+.home-title em{font-weight:400;color:var(--home-accent)}
+.home-description{max-width:390px;margin:27px 0 0;color:#615d56;font:19px/1.65 Georgia,'Times New Roman',serif}
+.home-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:31px}
+.home-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;background:var(--home-ink);color:#fff!important;border:1px solid var(--home-ink);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;transition:background .2s,transform .2s}
+.home-cta:hover{background:var(--home-accent);border-color:var(--home-accent);transform:translateY(-1px)}
+.home-cta.secondary{background:transparent;color:var(--home-ink)!important;border-color:#bdb5a9}
+.home-cta.secondary:hover{background:#ebe5db}
+.home-contact{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:30px;color:var(--home-muted);font-size:12px}
+.home-contact a{color:inherit;text-decoration:none}
+.home-contact a:hover{color:var(--home-accent);text-decoration:underline}
+.home-contact a[href*="wa.me"]{color:#247b4a}
+.home-art{position:relative;min-width:0;padding:clamp(12px,2vw,26px);background:#e8e1d5}
+.home-art:before{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.72);pointer-events:none;z-index:1}
+.home-art picture{display:block;width:100%}
+.home-art img{display:block;width:100%;height:auto;max-height:calc(100svh - 170px);object-fit:contain;object-position:center}
+.home-art-caption{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:#625d55;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+.home-more{background:#ebe6dd;border-top:1px solid var(--home-line);border-bottom:1px solid var(--home-line)}
+.home-more-inner{width:min(1320px,100%);margin:0 auto;padding:28px 38px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.home-more a{padding:12px 18px;border-right:1px solid #d3cabe}
+.home-more a:first-child{padding-left:0}
+.home-more a:last-child{border-right:0}
+.home-more strong{display:block;font:22px Georgia,serif;font-weight:400}
+.home-more span{display:block;margin-top:7px;color:var(--home-muted);font-size:11px;line-height:1.5}
+.home-footer{width:min(1320px,100%);margin:0 auto;padding:22px 38px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--home-muted);font-size:11px}
+.home-footer a{color:inherit}
+@media(min-width:1500px){.home-hero{min-height:calc(100svh - 83px)}}
+@media(max-width:900px){
+.home-page .navin{padding:15px 22px;align-items:flex-start;flex-direction:column;gap:13px}
+.home-page .menu{width:100%;justify-content:flex-start;gap:7px 22px}
+.home-hero{min-height:0;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px;padding:40px 22px 48px}
+.home-title{font-size:clamp(48px,7vw,72px)}
+.home-description{font-size:17px}
+.home-art{padding:12px}
+.home-art img{max-height:none}
+.home-more-inner{padding:22px;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:8px}
+.home-more a{padding:12px;border-right:0}
+.home-more a:first-child{padding-left:12px}
+.home-footer{padding:20px 22px}
 }
-</style>
-<style>
-/* FINAL MOBILE HOMEPAGE LAYOUT */
-@media(max-width:800px){
-  body.home-page{
-    background-color:#171717!important;
-    background-image:url("marcel-dutu-gallery-bg.jpg")!important;
-    background-repeat:repeat-y!important;
-    background-position:center top!important;
-    background-size:100% auto!important;
-    overflow-x:hidden!important;
-  }
-  .home-page .gallery-hero{
-    position:relative!important;
-    min-height:calc(170vw + 120px)!important;
-    margin:0!important;
-    padding:0!important;
-    background-color:transparent!important;
-    background-image:url("marcel-dutu-mobile-poster.jpg"),url("marcel-dutu-gallery-bg.jpg")!important;
-    background-position:center 120px,center bottom!important;
-    background-size:100% auto,100% auto!important;
-    background-repeat:no-repeat,no-repeat!important;
-    background-attachment:scroll!important;
-  }
-  .home-page .footer{
-    color:#f7f5f1!important;
-    background:rgba(23,23,23,.45)!important;
-    border-top:1px solid rgba(255,255,255,.25)!important;
-    text-shadow:0 1px 3px rgba(0,0,0,.8)!important;
-  }
-  .home-page .nav{
-    position:absolute!important;
-    top:0!important;
-    left:0!important;
-    right:0!important;
-    width:100%!important;
-    background:transparent!important;
-    border:0!important;
-    box-shadow:none!important;
-    z-index:100!important;
-  }
-  .home-page .navin{
-    display:block!important;
-    width:100%!important;
-    min-height:0!important;
-    padding:0!important;
-    margin:0!important;
-  }
-  .home-page .brandhome{
-    display:block!important;
-    width:100%!important;
-    height:0!important;
-  }
-  .home-page .menu{
-    display:grid!important;
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    grid-template-rows:repeat(2,auto)!important;
-    gap:6px 8px!important;
-    width:calc(100vw - 12px)!important;
-    margin:10px auto 0!important;
-    padding:0!important;
-    position:relative!important;
-    z-index:101!important;
-  }
-  .home-page .menu .home-nav{
-    display:none!important;
-  }
-  .home-page .menu a.gallery-nav,
-  .home-page .menu a.sculpture-nav,
-  .home-page .menu a.exhibitions-nav,
-  .home-page .menu a.about-nav{
-    display:flex!important;
-    width:100%!important;
-    height:auto!important;
-    aspect-ratio:3.14/1!important;
-    min-width:0!important;
-    max-width:none!important;
-    min-height:0!important;
-    max-height:none!important;
-    margin:0!important;
-    padding:0!important;
-    overflow:hidden!important;
-  }
-  .home-page .menu a picture{
-    display:block!important;
-    width:100%!important;
-    height:100%!important;
-  }
-  .home-page .menu a img{
-    display:block!important;
-    width:100%!important;
-    height:100%!important;
-    min-width:0!important;
-    max-width:none!important;
-    min-height:0!important;
-    max-height:none!important;
-    object-fit:cover!important;
-    border:0!important;
-    box-shadow:none!important;
-  }
-  .home-page .home-contact{
-    position:absolute!important;
-    top:calc(58vh - 90px)!important;
-    left:8%!important;
-    z-index:102!important;
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:4px!important;
-    margin:0!important;
-    padding:0!important;
-    font-size:19px!important;
-    line-height:1.15!important;
-    font-family:"Comic Sans MS","Comic Sans",cursive!important;
-    font-weight:700!important;
-  }
-  .home-page .home-contact a{
-    color:#fff!important;
-    text-shadow:0 1px 4px rgba(0,0,0,.75)!important;
-  }
-  .home-page .home-contact a[href*="wa.me"]{
-    color:#25D366!important;
-  }
-  .home-page .home-contact .orders-label{color:#fff!important;}
+@media(max-width:620px){
+.home-page .navin{padding:17px 18px 14px;gap:14px}
+.home-brand{font-size:24px}
+.home-brand span{font-size:9px}
+.home-page .menu{display:flex!important;flex-wrap:wrap!important;gap:4px 18px!important;font-size:10px!important}
+.home-hero{display:flex;flex-direction:column;align-items:stretch;gap:25px;padding:35px 18px 32px}
+.home-copy{padding:0}
+.home-kicker{margin-bottom:18px;font-size:9px;letter-spacing:.16em}
+.home-title{font-size:clamp(54px,15vw,78px);max-width:440px}
+.home-description{margin-top:18px;font-size:17px;line-height:1.55}
+.home-actions{margin-top:23px;gap:9px}
+.home-cta{min-height:45px;padding:0 14px;font-size:9px}
+.home-contact{margin-top:19px;font-size:12px}
+.home-art{padding:9px}
+.home-art img{width:100%;max-height:none}
+.home-art-caption{font-size:8px;letter-spacing:.1em}
+.home-more-inner{padding:12px 18px;gap:0}
+.home-more a{padding:15px 8px}
+.home-more a:first-child{padding-left:8px}
+.home-more strong{font-size:20px}
+.home-more span{font-size:10px}
+.home-footer{padding:18px;align-items:flex-start;flex-direction:column;gap:7px}
 }
+@media(prefers-reduced-motion:reduce){.home-cta{transition:none}}
 </style>
-<style>
-/* Mobile homepage: fit the full composition into one screen */
-@media (max-width:800px){
-  html, body.home-page{
-    width:100%;
-    height:100%;
-    min-height:0!important;
-    margin:0!important;
-    overflow:hidden!important;
-    overscroll-behavior:none;
-  }
-  body.home-page{
-    height:100vh!important;
-    height:100svh!important;
-    position:relative!important;
-    background-image:url("marcel-dutu-gallery-bg.jpg")!important;
-    background-size:cover!important;
-    background-position:center!important;
-  }
-  .home-page .nav{
-    position:absolute!important;
-    top:0!important;left:0!important;right:0!important;
-    height:clamp(112px, 17svh, 148px)!important;
-    overflow:visible!important;
-    z-index:100!important;
-  }
-  .home-page .navin{
-    display:block!important;
-    width:100%!important;
-    height:100%!important;
-    min-height:0!important;
-    margin:0!important;
-    padding:5px 6px 0!important;
-  }
-  .home-page .brandhome{height:0!important;display:block!important}
-  .home-page .menu{
-    display:grid!important;
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    grid-template-rows:repeat(2,min-content)!important;
-    gap:5px 7px!important;
-    width:100%!important;
-    margin:0 auto!important;
-    padding:0!important;
-    overflow:visible!important;
-  }
-  .home-page .menu .home-nav{display:none!important}
-  .home-page .menu a.gallery-nav,
-  .home-page .menu a.sculpture-nav,
-  .home-page .menu a.exhibitions-nav,
-  .home-page .menu a.about-nav{
-    display:flex!important;
-    width:100%!important;height:auto!important;
-    min-width:0!important;max-width:none!important;
-    min-height:0!important;max-height:none!important;
-    aspect-ratio:3.14/1!important;
-    margin:0!important;padding:0!important;overflow:hidden!important;
-  }
-  .home-page .menu a picture{display:block!important;width:100%!important;height:100%!important}
-  .home-page .menu a img{
-    display:block!important;width:100%!important;height:100%!important;
-    min-width:0!important;max-width:none!important;
-    min-height:0!important;max-height:none!important;
-    object-fit:cover!important;border:0!important;box-shadow:none!important;
-  }
-  .home-page main{margin:0!important;padding:0!important}
-  .home-page .gallery-hero{
-    position:absolute!important;
-    top:clamp(112px, 17svh, 148px)!important;
-    left:0!important;right:0!important;bottom:31px!important;
-    width:100%!important;max-width:none!important;
-    min-height:0!important;height:auto!important;
-    margin:0!important;padding:0!important;
-    background-color:transparent!important;
-    background-image:url("marcel-dutu-mobile-poster.jpg")!important;
-    background-position:center top!important;
-    background-size:100% 100%!important;
-    background-repeat:no-repeat!important;
-    background-attachment:scroll!important;
-    display:block!important;
-  }
-  /* The mobile poster already contains the artist title and subtitle. */
-  .home-page .gallery-title{display:none!important;}
-  .home-page .home-contact{
-    position:absolute!important;
-    top:54svh!important;
-    left:7%!important;
-    z-index:120!important;
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:3px!important;
-    margin:0!important;
-    padding:0!important;
-    font-family:"Comic Sans MS","Comic Sans",cursive!important;
-    font-size:clamp(15px,4.2vw,21px)!important;
-    line-height:1.12!important;
-    font-weight:700!important;
-    letter-spacing:.01em!important;
-  }
-  .home-page .home-contact .orders-label,
-  .home-page .home-contact a{
-    color:#fff!important;
-    text-shadow:0 2px 5px rgba(0,0,0,.9)!important;
-  }
-  .home-page .home-contact a[href*="wa.me"]{color:#25D366!important}
-  .home-page .home-contact .sep{display:none!important}
-  .home-page .desktop-whatsapp-hotspot{display:none!important}
-  .home-page .footer{
-    position:absolute!important;left:0!important;right:0!important;bottom:0!important;
-    height:31px!important;min-height:31px!important;
-    padding:0!important;margin:0!important;
-    display:flex!important;align-items:center!important;
-    font-size:clamp(9px,2.8vw,12px)!important;
-    white-space:nowrap!important;overflow:hidden!important;
-    color:#fff!important;background:rgba(20,20,20,.55)!important;
-    border-top:1px solid rgba(255,255,255,.25)!important;
-    text-shadow:0 1px 3px rgba(0,0,0,.9)!important;
-  }
-  .home-page .footer .wrap{
-    width:100%!important;max-width:none!important;
-    padding:0 10px!important;margin:0!important;
-  }
-}
-</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Marcel Duțu","url":"https://marceldutu.art/","inLanguage":"ro","description":"Portofoliul artistului Marcel Duțu: pictură, tehnică mixtă și sculptură."}</script>
 </head>
 <body class="home-page">
-<header class="nav"><div class="wrap navin">
-<div class="brandhome"><div class="home-contact"><span class="orders-label">Pentru comenzi</span><a href="tel:+40751817806">+40 751 817 806</a><a href="https://wa.me/40751817806">WhatsApp</a></div></div>
-<nav class="menu" aria-label="Navigație principală"><a class="home-nav home-canvas-nav" href="index.html"><picture><source media="(max-width: 800px)" srcset="prima-pagina-button.png"><img src="prima-pagina-button.png" alt="Prima pagină"></picture></a>
-<a class="gallery-nav" href="opere.html"><picture><source media="(max-width: 800px)" srcset="galerie-button.jpg"><img src="galerie-button.jpg" alt="Galerie"></picture></a><a class="sculpture-nav" href="sculptura.html"><picture><source media="(max-width: 800px)" srcset="sculptura-button.png"><img src="sculptura-button.png" alt="Sculptură"></picture></a><a class="exhibitions-nav" href="expozitii.html"><picture><source media="(max-width: 800px)" srcset="expozitii-button.png"><img src="expozitii-button.png" alt="Expoziții"></picture></a><a class="about-nav" href="despre.html"><picture><source media="(max-width: 800px)" srcset="despre-artist-button.png"><img src="despre-artist-button.png" alt="Despre artist"></picture></a>
-</nav>
-</div></header>
-<main><section class="wrap gallery-hero" aria-label="Galerie de artă Marcel Duțu"><h1 class="seo-home-title">Tablouri originale, pictură și sculptură de Marcel Duțu</h1><a class="desktop-whatsapp-hotspot" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="Contactează-l pe Marcel Duțu pe WhatsApp"></a><div class="gallery-title"></div></section></main>
-<footer class="footer"><div class="wrap">© 2026 Marcel Duțu · Galerie de artă</div></footer>
-</body></html>
+<header class="nav">
+  <div class="navin">
+    <a class="home-brand" href="index.html" aria-label="Marcel Duțu - prima pagină">Marcel Duțu<span>Artist plastic</span></a>
+    <nav class="menu" aria-label="Navigație principală">
+      <a class="gallery-nav" href="opere.html">Galerie</a>
+      <a class="sculpture-nav" href="sculptura.html">Sculptură</a>
+      <a class="exhibitions-nav" href="expozitii.html">Expoziții</a>
+      <a class="about-nav" href="despre.html">Despre artist</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="home-copy">
+      <p class="home-kicker">Pictură · Tehnică mixtă · Sculptură</p>
+      <h1 class="home-title" id="home-title">Arta de a vedea <em>altfel.</em></h1>
+      <p class="home-description">Descoperă universul vizual al lui Marcel Duțu — lucrări originale, forme expresive și explorări prin culoare și materie.</p>
+      <div class="home-actions">
+        <a class="home-cta" href="opere.html">Descoperă lucrările <span aria-hidden="true">&nbsp;↗</span></a>
+        <a class="home-cta secondary" href="despre.html">Despre artist</a>
+      </div>
+      <div class="home-contact" aria-label="Date de contact">
+        <span>Pentru comenzi:</span>
+        <a href="tel:+40751817806">+40 751 817 806</a>
+        <a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      </div>
+    </div>
+    <div class="home-art">
+      <picture>
+        <source media="(max-width: 620px)" srcset="marcel-dutu-mobile-poster.jpg">
+        <img src="marcel-dutu-desktop-poster.jpg" alt="Afișul portofoliului artistic al lui Marcel Duțu" fetchpriority="high">
+      </picture>
+      <div class="home-art-caption"><span>Portofoliu artistic</span><span>Marcel Duțu · România</span></div>
+    </div>
+  </section>
+  <section class="home-more" aria-label="Explorează portofoliul">
+    <div class="home-more-inner">
+      <a href="opere.html"><strong>Galerie</strong><span>Lucrări originale și tehnici mixte ↗</span></a>
+      <a href="sculptura.html"><strong>Sculptură</strong><span>Forme, volum și materie ↗</span></a>
+      <a href="expozitii.html"><strong>Expoziții</strong><span>Prezențe și proiecte artistice ↗</span></a>
+      <a href="despre.html"><strong>Despre artist</strong><span>Parcurs și activitate artistică ↗</span></a>
+    </div>
+  </section>
+</main>
+<footer class="home-footer"><span>© 2026 Marcel Duțu · Galerie de artă</span><a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">Contactează artistul ↗</a></footer>
+</body>
+</html>
