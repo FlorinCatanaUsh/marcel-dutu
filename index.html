@@ -200,6 +200,11 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
  body.home-page .home-kicker{margin-bottom:18px!important}
  body.home-page .home-contact{font-size:12px!important;gap:8px 14px!important;margin-top:22px!important}
 }
+</style><style>
+.home-contact .home-call-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;padding:12px 22px!important;border-radius:999px!important;background:#279f60!important;color:#fff!important;text-decoration:none!important;font:600 15px/1.2 Arial,sans-serif!important;letter-spacing:.02em!important;box-shadow:0 3px 10px rgba(39,159,96,.18)!important;transition:background .2s ease,transform .2s ease!important}
+.home-contact .home-call-button:hover,.home-contact .home-call-button:focus-visible{background:#208650!important;transform:translateY(-1px)!important}
+.home-contact .home-call-button span{font-size:21px!important;line-height:1!important}
+@media(max-width:620px){body.home-page .home-contact .home-call-button{font-size:14px!important;padding:11px 18px!important}}
 </style></head>
 <body class="home-page">
 <header class="nav">
@@ -220,8 +225,7 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
       <h1 class="home-title" id="home-title">Arta de a vedea <em>altfel.</em></h1>
       <p class="home-description">Descoperă universul vizual al lui Marcel Duțu — lucrări originale, forme expresive și explorări prin culoare și materie.</p>
 <div class="home-contact" aria-label="Date de contact">
-        <span>Pentru comenzi:</span>
-        <a href="tel:+40751817806">+40 751 817 806</a>
+        <a class="home-call-button" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"><span aria-hidden="true">☎</span> Sună acum</a>
         <a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
       </div>
     </div>
