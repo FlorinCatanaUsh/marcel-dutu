@@ -92,7 +92,17 @@ gtag('config', 'G-MMW7708D4F');
 .navin .menu a picture,.navin .menu a img{display:none!important}
 @media(max-width:800px){.navin{display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important;padding:12px 18px!important;min-height:0!important}.navin .menu{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;align-items:center!important;gap:4px 18px!important;width:100%!important;margin:8px 0 0!important;padding:0!important;overflow:visible!important}.navin .menu a{display:inline-flex!important;width:auto!important;height:auto!important;aspect-ratio:auto!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;padding:8px 0!important;flex:none!important;overflow:visible!important;font-size:10px!important;letter-spacing:.08em!important}.navin .menu a picture,.navin .menu a img{display:none!important}}
 </style>
-</head>
+<style>
+/* Compact mobile navigation: prevent oversized vertical gaps */
+@media(max-width:800px){
+ .nav{position:relative!important;top:auto!important}
+ .nav .navin{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:12px!important;width:100%!important;min-height:0!important;height:auto!important;padding:16px 18px!important;margin:0 auto!important}
+ .nav .menu{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;align-content:center!important;flex-wrap:wrap!important;gap:6px 18px!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;margin:8px 0 0!important;padding:0!important;overflow:visible!important;position:static!important}
+ .nav .menu>a{display:inline-flex!important;position:static!important;float:none!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;width:auto!important;height:auto!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;margin:0!important;padding:7px 0!important;line-height:1.3!important;overflow:visible!important;white-space:nowrap!important;font-size:10px!important;letter-spacing:.08em!important;border:0!important;border-bottom:1px solid transparent!important;background:transparent!important;box-shadow:none!important}
+ .nav .menu>a picture,.nav .menu>a img{display:none!important}
+}
+@media(max-width:380px){.nav .menu{column-gap:13px!important;row-gap:4px!important}.nav .menu>a{font-size:9px!important}}
+</style></head>
 <body>
 <header class="nav"><div class="wrap navin">
 <nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html" aria-current="page">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html">Expoziții</a><a class="about-nav" href="despre.html">Despre artist</a></nav>
