@@ -186,7 +186,15 @@ gtag('config', 'G-MMW7708D4F');
 .nav .brand,.nav .home-brand{color:#171717!important}
 .nav .menu a{color:#252523!important}
 .nav .menu a[aria-current=page],.nav .menu a:hover,.nav .menu a:focus-visible{color:#8b4034!important;border-bottom-color:#8b4034!important}
-</style><style>@media(max-width:600px){.nav .menu{font-size:clamp(10px,3.3vw,14px)!important}}@media(max-width:380px){.nav .menu{font-size:9px!important}}</style></head>
+</style><style>@media(max-width:600px){.nav .menu{font-size:clamp(10px,3.3vw,14px)!important}}@media(max-width:380px){.nav .menu{font-size:9px!important}}</style><style>
+/* Apply the same reduced size directly to every navigation link on phones */
+@media(max-width:600px){
+ .nav .menu>a{font-size:clamp(10px,3.3vw,14px)!important}
+}
+@media(max-width:380px){
+ .nav .menu>a{font-size:9px!important}
+}
+</style></head>
 <body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu</a><nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html">Expoziții</a><a class="about-nav" href="despre.html" aria-current="page">Despre artist</a></nav></div></header>
 
