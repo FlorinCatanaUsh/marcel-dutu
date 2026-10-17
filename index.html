@@ -181,6 +181,25 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
 @media(max-width:380px){
  .nav .menu>a{font-size:9px!important}
 }
+</style><style>
+/* Home page is a fixed single-screen landing page; remove circled action/card areas */
+@media(min-width:0px){
+ html:has(body.home-page),body.home-page{height:100%!important;min-height:100%!important;overflow:hidden!important}
+ body.home-page{height:100dvh!important;max-height:100dvh!important;display:flex!important;flex-direction:column!important}
+ body.home-page main{flex:1 1 auto!important;min-height:0!important;overflow:hidden!important;display:flex!important}
+ body.home-page .home-hero{flex:1 1 auto!important;min-height:0!important;height:100%!important;overflow:hidden!important;display:flex!important;align-items:center!important}
+ body.home-page .home-copy{width:100%!important;max-width:900px!important;margin:0 auto!important}
+ body.home-page .home-contact{margin-bottom:0!important}
+}
+@media(max-width:620px){
+ body.home-page .nav{flex:0 0 auto!important}
+ body.home-page main{flex:1 1 auto!important;min-height:0!important}
+ body.home-page .home-hero{padding:24px 22px 20px!important;align-items:center!important}
+ body.home-page .home-title{font-size:clamp(43px,11.8vw,66px)!important;line-height:.98!important}
+ body.home-page .home-description{font-size:clamp(16px,4.6vw,20px)!important;line-height:1.42!important;margin-top:20px!important}
+ body.home-page .home-kicker{margin-bottom:18px!important}
+ body.home-page .home-contact{font-size:12px!important;gap:8px 14px!important;margin-top:22px!important}
+}
 </style></head>
 <body class="home-page">
 <header class="nav">
@@ -200,26 +219,13 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
       <p class="home-kicker">Pictură · Tehnică mixtă · Sculptură</p>
       <h1 class="home-title" id="home-title">Arta de a vedea <em>altfel.</em></h1>
       <p class="home-description">Descoperă universul vizual al lui Marcel Duțu — lucrări originale, forme expresive și explorări prin culoare și materie.</p>
-      <div class="home-actions">
-        <a class="home-cta" href="opere.html">Descoperă lucrările <span aria-hidden="true">&nbsp;↗</span></a>
-        <a class="home-cta secondary" href="despre.html">Despre artist</a>
-      </div>
-      <div class="home-contact" aria-label="Date de contact">
+<div class="home-contact" aria-label="Date de contact">
         <span>Pentru comenzi:</span>
         <a href="tel:+40751817806">+40 751 817 806</a>
         <a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
       </div>
     </div>
     </section>
-  <section class="home-more" aria-label="Explorează portofoliul">
-    <div class="home-more-inner">
-      <a href="opere.html"><strong>Galerie</strong><span>Lucrări originale și tehnici mixte ↗</span></a>
-      <a href="sculptura.html"><strong>Sculptură</strong><span>Forme, volum și materie ↗</span></a>
-      <a href="expozitii.html"><strong>Expoziții</strong><span>Prezențe și proiecte artistice ↗</span></a>
-      <a href="despre.html"><strong>Despre artist</strong><span>Parcurs și activitate artistică ↗</span></a>
-    </div>
-  </section>
 </main>
-<footer class="home-footer"><span>© 2026 Marcel Duțu · Galerie de artă</span><a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">Contactează artistul ↗</a></footer>
 </body>
 </html>
