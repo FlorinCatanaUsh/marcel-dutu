@@ -60,12 +60,12 @@ body.home-page{background:#211811;margin:0}
 .poster-page{width:100%;max-width:1100px;margin:0 auto;position:relative;line-height:0;box-shadow:0 12px 45px rgba(0,0,0,.4)}
 .poster-page picture,.poster-page img{display:block;width:100%;height:auto}
 .poster-hotspots{position:absolute;inset:0;display:block}
-.poster-hotspots a{position:absolute;display:block;line-height:normal;background:transparent;border-radius:8px}
+.poster-hotspots a{position:absolute;display:flex;align-items:center;justify-content:center;line-height:normal;background:transparent;border-radius:8px}
 .poster-hotspots a:focus-visible{outline:3px solid #d2aa65;outline-offset:2px;background:rgba(255,255,255,.08)}
 .poster-quote{position:absolute;left:7%;right:7%;top:76%;height:12%;display:flex;align-items:center;justify-content:center;padding:4px 8px;text-align:center;pointer-events:none}
 .poster-quote .quote-text{max-width:900px;margin:0;color:#fff0d8;font:italic clamp(12px,2.6vw,26px)/1.3 Georgia,'Times New Roman',serif;text-shadow:0 2px 5px rgba(0,0,0,.95),0 0 12px rgba(0,0,0,.8);opacity:1;transition:opacity .6s ease}
 .poster-quote .quote-text.is-fading{opacity:0}
-@media(max-width:699px){.poster-quote{top:76%;height:12%;left:6%;right:6%;padding:3px 5px}.poster-quote .quote-text{font-size:clamp(12px,3.6vw,20px);line-height:1.25}}
+@media(max-width:699px){.poster-tabs{top:12%;height:5.5%;left:2%;right:2%}.poster-tabs a{font-size:clamp(9px,2.65vw,16px);letter-spacing:0;padding:2px 1px}.poster-quote{top:76%;height:12%;left:6%;right:6%;padding:3px 5px}.poster-quote .quote-text{font-size:clamp(12px,3.6vw,20px);line-height:1.25}}
 @media(prefers-reduced-motion:reduce){.poster-quote .quote-text{transition:none}}
 .quote-strip{width:100%;max-width:1100px;margin:0 auto;padding:24px 20px 30px;text-align:center;background:linear-gradient(180deg,#2c2018,#17110d);border-top:1px solid rgba(214,174,111,.55);min-height:112px;display:flex;align-items:center;justify-content:center}
 .quote-text{max-width:850px;margin:0;color:#f7ead5;font:italic clamp(16px,2.5vw,25px)/1.45 Georgia,'Times New Roman',serif;text-shadow:0 2px 8px rgba(0,0,0,.45);opacity:1;transition:opacity .6s ease}
@@ -73,11 +73,13 @@ body.home-page{background:#211811;margin:0}
 .quote-mark{color:#d2aa65;font-size:1.25em;padding:0 .12em}
 @media(max-width:600px){.quote-strip{padding:18px 16px 22px;min-height:105px}.quote-text{font-size:clamp(15px,4vw,19px)}}
 @media(prefers-reduced-motion:reduce){.quote-text{transition:none}}
-.poster-tabs{left:3%;right:3%;top:12%;height:5%;display:flex}
-.poster-tabs a{position:relative;top:0;height:100%;width:25%}
+.poster-tabs{position:absolute;left:3%;right:3%;top:12%;height:5%;display:flex;align-items:stretch;gap:0}
+.poster-tabs a{position:relative;inset:auto;height:100%;width:25%;color:#fff8e9;font:700 clamp(10px,1.8vw,19px)/1.1 Georgia,serif;letter-spacing:.035em;text-align:center;text-shadow:0 2px 5px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.8);padding:3px 2px;border-right:1px solid rgba(255,238,205,.65);white-space:nowrap}
+.poster-tabs a:last-child{border-right:0}
+.poster-tabs a:hover,.poster-tabs a:focus-visible{background:rgba(28,18,12,.42);color:#ffe0a0}
 .poster-call{left:5%;bottom:1.2%;width:44%;height:6.5%}
 .poster-whatsapp{right:5%;bottom:1.2%;width:44%;height:6.5%}
-@media(min-width:700px){.poster-tabs{top:12.2%;height:6%}.poster-call,.poster-whatsapp{bottom:1.2%;height:7%}}
+@media(min-width:700px){.poster-tabs{top:12.2%;height:6%}.poster-tabs a{font-size:clamp(13px,1.6vw,20px)}.poster-call,.poster-whatsapp{bottom:1.2%;height:7%}}
 </style>
 <main class="poster-page" aria-label="Marcel Duțu — artist plastic și sculptor">
 <picture>
@@ -86,10 +88,10 @@ body.home-page{background:#211811;margin:0}
 </picture>
 <nav class="poster-hotspots" aria-label="Navigație și contact">
 <div class="poster-tabs">
-<a href="opere.html" aria-label="Galerie"></a>
-<a href="sculptura.html" aria-label="Sculptură"></a>
-<a href="expozitii.html" aria-label="Expoziții"></a>
-<a href="despre.html" aria-label="Despre artist"></a>
+<a href="opere.html" aria-label="Galerie">GALERIE</a>
+<a href="sculptura.html" aria-label="Sculptură">SCULPTURĂ</a>
+<a href="expozitii.html" aria-label="Expoziții">EXPOZIȚII</a>
+<a href="despre.html" aria-label="Despre artist">DESPRE ARTIST</a>
 </div>
 <a class="poster-call" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"></a>
 <a class="poster-whatsapp" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Marcel Duțu"></a>
