@@ -173,7 +173,15 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
 .nav .brand,.nav .home-brand{color:#171717!important}
 .nav .menu a{color:#252523!important}
 .nav .menu a[aria-current=page],.nav .menu a:hover,.nav .menu a:focus-visible{color:#8b4034!important;border-bottom-color:#8b4034!important}
-</style><style>@media(max-width:600px){.nav .menu{font-size:clamp(10px,3.3vw,14px)!important}}@media(max-width:380px){.nav .menu{font-size:9px!important}}</style></head>
+</style><style>@media(max-width:600px){.nav .menu{font-size:clamp(10px,3.3vw,14px)!important}}@media(max-width:380px){.nav .menu{font-size:9px!important}}</style><style>
+/* Apply the same reduced size directly to every navigation link on phones */
+@media(max-width:600px){
+ .nav .menu>a{font-size:clamp(10px,3.3vw,14px)!important}
+}
+@media(max-width:380px){
+ .nav .menu>a{font-size:9px!important}
+}
+</style></head>
 <body class="home-page">
 <header class="nav">
   <div class="navin">
