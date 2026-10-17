@@ -266,7 +266,71 @@ body.home-page .home-contact-buttons .home-whatsapp-button .contact-icon{stroke:
  body.home-page .home-contact-buttons .home-call-button{font-size:12px!important;padding:9px 8px!important;min-height:44px!important;gap:5px!important}
  body.home-page .home-contact-buttons .home-call-button .contact-icon{width:17px!important;height:17px!important;flex-basis:17px!important}
 }
-</style></head>
+</style>
+<style>
+/* Mobile homepage: balanced typography, natural scrolling, contact buttons lower */
+@media(max-width:620px){
+  html:has(body.home-page),body.home-page{
+    height:auto!important;min-height:100%!important;max-height:none!important;
+    overflow-x:hidden!important;overflow-y:auto!important;
+  }
+  body.home-page{
+    height:auto!important;min-height:100svh!important;max-height:none!important;
+    display:flex!important;flex-direction:column!important;
+  }
+  body.home-page main{
+    flex:0 0 auto!important;min-height:0!important;height:auto!important;
+    overflow:visible!important;display:block!important;
+  }
+  body.home-page .home-hero{
+    display:block!important;width:100%!important;height:auto!important;
+    min-height:0!important;overflow:visible!important;
+    padding:34px 22px 56px!important;
+  }
+  body.home-page .home-copy{
+    display:block!important;width:100%!important;max-width:560px!important;
+    height:auto!important;min-height:0!important;margin:0 auto!important;padding:0!important;
+  }
+  body.home-page .home-kicker{
+    max-width:100%!important;margin:0 0 20px!important;
+    font-size:10px!important;line-height:1.55!important;letter-spacing:.13em!important;
+  }
+  body.home-page .home-title{
+    max-width:100%!important;margin:0!important;
+    font-size:clamp(47px,11.8vw,66px)!important;
+    line-height:.98!important;letter-spacing:-.055em!important;
+    text-wrap:balance!important;
+  }
+  body.home-page .home-description{
+    max-width:520px!important;margin:24px 0 0!important;
+    font-size:clamp(18px,4.8vw,21px)!important;
+    line-height:1.52!important;text-wrap:pretty!important;
+  }
+  body.home-page .home-contact-buttons{
+    margin:38px 0 12px!important;padding:0!important;
+    display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+    justify-content:center!important;align-items:center!important;
+    gap:10px!important;width:100%!important;
+  }
+  body.home-page .home-contact-buttons>a{
+    flex:1 1 0!important;min-width:0!important;max-width:220px!important;
+    min-height:48px!important;padding:10px 11px!important;gap:7px!important;
+    font-size:clamp(11px,3.5vw,14px)!important;line-height:1!important;
+    white-space:nowrap!important;
+  }
+}
+@media(max-width:380px){
+  body.home-page .home-hero{padding-left:18px!important;padding-right:18px!important}
+  body.home-page .home-kicker{font-size:9px!important;letter-spacing:.1em!important}
+  body.home-page .home-title{font-size:clamp(44px,11.8vw,52px)!important}
+  body.home-page .home-description{font-size:18px!important;line-height:1.5!important}
+  body.home-page .home-contact-buttons{gap:7px!important;margin-top:32px!important}
+  body.home-page .home-contact-buttons>a{padding:9px 7px!important;gap:5px!important;font-size:11px!important}
+  body.home-page .home-contact-buttons .contact-icon{width:16px!important;height:16px!important;flex-basis:16px!important}
+}
+</style>
+
+</head>
 <body class="home-page">
 <header class="nav">
   <div class="navin">
