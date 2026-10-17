@@ -234,6 +234,16 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
 .home-contact-buttons>a:active{transform:translateY(3px)!important}
 @media(max-width:620px){body.home-page .home-contact-buttons{gap:12px!important}body.home-page .home-contact-buttons>a{font-size:15px!important;min-height:53px!important;padding:12px 20px!important;gap:9px!important}body.home-page .home-contact-buttons .contact-icon{width:22px!important;height:22px!important;flex-basis:22px!important}}
 @media(prefers-reduced-motion:reduce){.home-contact-buttons>a{transition:none!important}}
+</style><style>
+/* Keep the two glass contact buttons side by side on phones */
+body.home-page .home-contact-buttons{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;justify-content:center!important;gap:10px!important;width:100%!important}
+body.home-page .home-contact-buttons>a{flex:1 1 0!important;min-width:0!important;max-width:210px!important;padding:11px 13px!important;gap:7px!important;font-size:14px!important;white-space:nowrap!important;min-height:48px!important}
+body.home-page .home-contact-buttons .contact-icon{width:19px!important;height:19px!important;flex:0 0 19px!important}
+@media(max-width:380px){
+ body.home-page .home-contact-buttons{gap:7px!important}
+ body.home-page .home-contact-buttons>a{padding:10px 8px!important;gap:5px!important;font-size:12px!important;min-height:44px!important}
+ body.home-page .home-contact-buttons .contact-icon{width:17px!important;height:17px!important;flex-basis:17px!important}
+}
 </style></head>
 <body class="home-page">
 <header class="nav">
