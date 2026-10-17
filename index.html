@@ -220,6 +220,20 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
 .home-contact .home-call-button span{font-size:25px!important;line-height:1!important;font-weight:400!important}
 @media(max-width:620px){body.home-page .home-contact .home-call-button{font-size:17px!important;min-height:54px!important;padding:13px 27px!important;gap:10px!important}}
 @media(prefers-reduced-motion:reduce){.home-contact .home-call-button{transition:none!important}}
+</style><style>
+/* Matching glass-effect contact buttons */
+.home-contact-buttons{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:14px!important}
+.home-contact-buttons>a{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:11px!important;min-height:58px!important;padding:14px 27px!important;border-radius:999px!important;text-decoration:none!important;font:700 17px/1.1 Arial,sans-serif!important;letter-spacing:.01em!important;position:relative!important;isolation:isolate!important;overflow:hidden!important;transition:transform .16s ease,filter .16s ease,box-shadow .16s ease!important}
+.home-contact-buttons>a:before{content:""!important;position:absolute!important;inset:1px 1px 48% 1px!important;border-radius:999px 999px 48% 48%!important;background:linear-gradient(180deg,rgba(255,255,255,.58),rgba(255,255,255,.08))!important;z-index:-1!important;pointer-events:none!important}
+.home-contact-buttons .contact-icon{width:25px!important;height:25px!important;flex:0 0 25px!important;fill:none!important;stroke:currentColor!important;stroke-width:2.2!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.home-contact-buttons .home-call-button{color:#fff!important;border:1px solid rgba(255,255,255,.78)!important;background:linear-gradient(180deg,#63d96e 0%,#31b94f 45%,#128a36 100%)!important;text-shadow:0 1px 1px rgba(0,65,18,.25)!important;box-shadow:inset 0 2px 4px rgba(255,255,255,.75),inset 0 -5px 8px rgba(0,78,20,.28),0 4px 0 #14772e,0 8px 16px rgba(20,110,45,.22)!important}
+.home-contact-buttons .home-whatsapp-button{color:#075b31!important;border:1px solid rgba(255,255,255,.9)!important;background:linear-gradient(180deg,#8af0a0 0%,#45d879 46%,#20bd61 100%)!important;text-shadow:0 1px 0 rgba(255,255,255,.35)!important;box-shadow:inset 0 2px 4px rgba(255,255,255,.78),inset 0 -5px 8px rgba(0,100,45,.16),0 4px 0 #15934b,0 8px 16px rgba(20,130,70,.18)!important}
+.home-contact-buttons>a:hover,.home-contact-buttons>a:focus-visible{filter:brightness(1.05)!important;transform:translateY(-2px)!important}
+.home-contact-buttons .home-call-button:hover,.home-contact-buttons .home-call-button:focus-visible{box-shadow:inset 0 2px 4px rgba(255,255,255,.8),inset 0 -5px 8px rgba(0,78,20,.24),0 6px 0 #14772e,0 11px 19px rgba(20,110,45,.25)!important}
+.home-contact-buttons .home-whatsapp-button:hover,.home-contact-buttons .home-whatsapp-button:focus-visible{box-shadow:inset 0 2px 4px rgba(255,255,255,.82),inset 0 -5px 8px rgba(0,100,45,.14),0 6px 0 #15934b,0 11px 19px rgba(20,130,70,.22)!important}
+.home-contact-buttons>a:active{transform:translateY(3px)!important}
+@media(max-width:620px){body.home-page .home-contact-buttons{gap:12px!important}body.home-page .home-contact-buttons>a{font-size:15px!important;min-height:53px!important;padding:12px 20px!important;gap:9px!important}body.home-page .home-contact-buttons .contact-icon{width:22px!important;height:22px!important;flex-basis:22px!important}}
+@media(prefers-reduced-motion:reduce){.home-contact-buttons>a{transition:none!important}}
 </style></head>
 <body class="home-page">
 <header class="nav">
@@ -239,9 +253,9 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
       <p class="home-kicker">Pictură · Tehnică mixtă · Sculptură</p>
       <h1 class="home-title" id="home-title">Arta de a vedea <em>altfel.</em></h1>
       <p class="home-description">Descoperă universul vizual al lui Marcel Duțu — lucrări originale, forme expresive și explorări prin culoare și materie.</p>
-<div class="home-contact" aria-label="Date de contact">
-        <a class="home-call-button" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"><span aria-hidden="true">☎</span> Sună acum</a>
-        <a href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+<div class="home-contact home-contact-buttons" aria-label="Date de contact">
+        <a class="home-call-button" href="tel:+40751817806" aria-label="Sună acum la +40 751 817 806"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9.1 3c.7-.1 1.3.3 1.5.9l1 2.8c.2.6 0 1.2-.5 1.6l-1.5 1.2a14 14 0 0 0 5 5l1.2-1.5c.4-.5 1-.7 1.6-.5l2.8 1c.6.2 1 .8.9 1.5l-.5 2.5c-.1.8-.8 1.4-1.6 1.4C10 19 5 14 5 7.1c0-.8.6-1.5 1.6-1.6Z"/></svg><span>Sună acum</span></a>
+        <a class="home-whatsapp-button" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="Contactează pe WhatsApp la +40 751 817 806"><svg class="contact-icon whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9a8.4 8.4 0 1 1 16.1-3.9Z"/><path d="M8.6 7.8c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.3-.1.5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.6-.5.4-1.1.6-1.8.4-1-.2-2.2-.8-3.4-1.9-1.4-1.3-2.3-2.9-2.5-3.9-.2-.8.1-1.6.7-2.1Z"/></svg><span>WhatsApp</span></a>
       </div>
     </div>
     </section>
