@@ -201,10 +201,25 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
  body.home-page .home-contact{font-size:12px!important;gap:8px 14px!important;margin-top:22px!important}
 }
 </style><style>
-.home-contact .home-call-button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;padding:12px 22px!important;border-radius:999px!important;background:#279f60!important;color:#fff!important;text-decoration:none!important;font:600 15px/1.2 Arial,sans-serif!important;letter-spacing:.02em!important;box-shadow:0 3px 10px rgba(39,159,96,.18)!important;transition:background .2s ease,transform .2s ease!important}
-.home-contact .home-call-button:hover,.home-contact .home-call-button:focus-visible{background:#208650!important;transform:translateY(-1px)!important}
-.home-contact .home-call-button span{font-size:21px!important;line-height:1!important}
-@media(max-width:620px){body.home-page .home-contact .home-call-button{font-size:14px!important;padding:11px 18px!important}}
+/* Glossy 3D call button, responsive and fully clickable */
+.home-contact .home-call-button{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;
+ min-height:58px!important;padding:15px 34px!important;border:1px solid rgba(255,255,255,.55)!important;
+ border-radius:999px!important;color:#fff!important;text-decoration:none!important;
+ background:linear-gradient(180deg,#62d86d 0%,#31b84f 42%,#15943a 100%)!important;
+ font:700 18px/1.1 Arial,sans-serif!important;letter-spacing:.01em!important;
+ text-shadow:0 1px 1px rgba(0,75,20,.28)!important;
+ box-shadow:inset 0 3px 5px rgba(255,255,255,.58),inset 0 -5px 8px rgba(0,83,20,.26),0 5px 0 #167d31,0 9px 16px rgba(20,110,45,.25)!important;
+ transition:transform .16s ease,box-shadow .16s ease,filter .16s ease!important;
+}
+.home-contact .home-call-button:hover,.home-contact .home-call-button:focus-visible{
+ filter:brightness(1.06)!important;transform:translateY(-2px)!important;
+ box-shadow:inset 0 3px 5px rgba(255,255,255,.65),inset 0 -5px 8px rgba(0,83,20,.22),0 7px 0 #167d31,0 12px 19px rgba(20,110,45,.28)!important;
+}
+.home-contact .home-call-button:active{transform:translateY(3px)!important;box-shadow:inset 0 3px 7px rgba(0,65,18,.2),0 2px 0 #167d31,0 4px 8px rgba(20,110,45,.2)!important}
+.home-contact .home-call-button span{font-size:25px!important;line-height:1!important;font-weight:400!important}
+@media(max-width:620px){body.home-page .home-contact .home-call-button{font-size:17px!important;min-height:54px!important;padding:13px 27px!important;gap:10px!important}}
+@media(prefers-reduced-motion:reduce){.home-contact .home-call-button{transition:none!important}}
 </style></head>
 <body class="home-page">
 <header class="nav">
