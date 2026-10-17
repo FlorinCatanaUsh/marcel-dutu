@@ -100,6 +100,24 @@ body.home-page{margin:0;background:var(--home-paper);color:var(--home-ink);font-
  body.home-page .nav .menu>a picture,body.home-page .nav .menu>a img{display:none!important}
 }
 @media(max-width:380px){body.home-page .nav .navin{padding-left:18px!important;padding-right:18px!important;gap:24px!important}body.home-page .nav .menu{column-gap:17px!important;row-gap:10px!important;font-size:11px!important}}
+</style><style>
+/* Homepage mobile typography/layout refinement */
+@media(max-width:620px){
+ body.home-page .home-hero{display:block!important;width:100%!important;min-height:0!important;margin:0!important;padding:36px 22px 42px!important}
+ body.home-page .home-copy{width:100%!important;max-width:560px!important;margin:0 auto!important;padding:0!important}
+ body.home-page .home-kicker{display:flex!important;align-items:center!important;gap:12px!important;margin:0 0 24px!important;font-size:10px!important;line-height:1.5!important;letter-spacing:.15em!important;max-width:100%!important}
+ body.home-page .home-kicker:before{flex:0 0 28px!important;width:28px!important}
+ body.home-page .home-title{max-width:100%!important;width:100%!important;margin:0!important;font-size:clamp(50px,12.8vw,72px)!important;line-height:.98!important;letter-spacing:-.055em!important;overflow-wrap:normal!important;word-break:normal!important}
+ body.home-page .home-description{max-width:100%!important;margin:24px 0 0!important;font-size:20px!important;line-height:1.55!important}
+ body.home-page .home-actions{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin-top:24px!important}
+ body.home-page .home-contact{display:flex!important;flex-wrap:wrap!important;gap:8px 16px!important;margin-top:22px!important;font-size:12px!important}
+}
+@media(max-width:380px){
+ body.home-page .home-hero{padding-left:18px!important;padding-right:18px!important}
+ body.home-page .home-kicker{font-size:9px!important;letter-spacing:.1em!important}
+ body.home-page .home-title{font-size:clamp(47px,12.2vw,58px)!important}
+ body.home-page .home-description{font-size:18px!important}
+}
 </style></head>
 <body class="home-page">
 <header class="nav">
