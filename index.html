@@ -9,7 +9,7 @@
 <meta property="og:title" content="Marcel Duțu | Artist plastic și sculptor">
 <meta property="og:description" content="Lucrări originale, unice prin realizare, moderne și surprinzătoare.">
 <meta property="og:url" content="https://marceldutu.art/">
-<meta property="og:image" content="https://marceldutu.art/poster-prima-pagina.png">
+<meta property="og:image" content="https://marceldutu.art/poster_site.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://marceldutu.art/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -62,6 +62,12 @@ body.home-page{background:#211811;margin:0}
 .poster-hotspots{position:absolute;inset:0;display:block}
 .poster-hotspots a{position:absolute;display:block;line-height:normal;background:transparent;border-radius:8px}
 .poster-hotspots a:focus-visible{outline:3px solid #d2aa65;outline-offset:2px;background:rgba(255,255,255,.08)}
+.quote-strip{width:100%;max-width:1100px;margin:0 auto;padding:24px 20px 30px;text-align:center;background:linear-gradient(180deg,#2c2018,#17110d);border-top:1px solid rgba(214,174,111,.55);min-height:112px;display:flex;align-items:center;justify-content:center}
+.quote-text{max-width:850px;margin:0;color:#f7ead5;font:italic clamp(16px,2.5vw,25px)/1.45 Georgia,'Times New Roman',serif;text-shadow:0 2px 8px rgba(0,0,0,.45);opacity:1;transition:opacity .6s ease}
+.quote-text.is-fading{opacity:0}
+.quote-mark{color:#d2aa65;font-size:1.25em;padding:0 .12em}
+@media(max-width:600px){.quote-strip{padding:18px 16px 22px;min-height:105px}.quote-text{font-size:clamp(15px,4vw,19px)}}
+@media(prefers-reduced-motion:reduce){.quote-text{transition:none}}
 .poster-tabs{left:3%;right:3%;top:12%;height:5%;display:flex}
 .poster-tabs a{position:relative;top:0;height:100%;width:25%}
 .poster-call{left:5%;bottom:1.2%;width:44%;height:6.5%}
@@ -70,8 +76,8 @@ body.home-page{background:#211811;margin:0}
 </style>
 <main class="poster-page" aria-label="Marcel Duțu — artist plastic și sculptor">
 <picture>
-<source media="(max-width: 699px)" srcset="poster-prima-pagina.png">
-<img src="poster-prima-pagina.png" alt="Poster Marcel Duțu pictând în atelier, cu taburi Galerie, Sculptură, Expoziții, Despre artist și butoane de contact." fetchpriority="high">
+<source media="(max-width: 699px)" srcset="poster_site.png">
+<img src="poster_site.png" alt="Poster Marcel Duțu pictând în atelier, cu taburi Galerie, Sculptură, Expoziții, Despre artist și butoane de contact." fetchpriority="high">
 </picture>
 <nav class="poster-hotspots" aria-label="Navigație și contact">
 <div class="poster-tabs">
@@ -84,5 +90,40 @@ body.home-page{background:#211811;margin:0}
 <a class="poster-whatsapp" href="https://wa.me/40751817806" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Marcel Duțu"></a>
 </nav>
 </main>
+<section class="quote-strip" aria-label="Citate despre artă">
+<p class="quote-text" id="art-quote" aria-live="polite"><span class="quote-mark">„</span>Arta începe acolo unde cuvintele nu mai sunt de ajuns.<span class="quote-mark">”</span></p>
+</section>
+<script>
+(function(){
+  const quoteEl = document.getElementById('art-quote');
+  if (!quoteEl) return;
+  const quotes = [
+    'Arta începe acolo unde cuvintele nu mai sunt de ajuns.',
+    'Culorile nu umplu doar pânza, ci dau glas emoțiilor pe care sufletul nu le poate rosti.',
+    'Un tablou nu este terminat când artistul lasă pensula, ci când cineva descoperă în el o parte din sine.',
+    'Frumusețea artei nu stă doar în ceea ce vezi, ci în ceea ce simți privind.',
+    'Artistul nu reproduce lumea. El ne invită să o privim cu alți ochi.',
+    'Timpul trece, dar emoția adevărată rămâne vie în artă.',
+    'Fiecare operă autentică poartă o amprentă pe care nimeni altcineva nu o poate reproduce.',
+    'În fața unui tablou, uneori tăcerea spune mai mult decât o mie de cuvinte.',
+    'O operă de artă este o clipă de viață transformată în ceva ce poate dăinui peste generații.',
+    'Nu alegi un tablou doar pentru locul pe care îl va ocupa pe perete, ci pentru locul pe care îl va ocupa în sufletul tău.'
+  ];
+  let index = 0;
+  const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.setInterval(function(){
+    index = (index + 1) % quotes.length;
+    if (reducedMotion) {
+      quoteEl.textContent = '„' + quotes[index] + '”';
+      return;
+    }
+    quoteEl.classList.add('is-fading');
+    window.setTimeout(function(){
+      quoteEl.textContent = '„' + quotes[index] + '”';
+      quoteEl.classList.remove('is-fading');
+    }, 600);
+  }, 3600);
+})();
+</script>
 </body>
 </html>
