@@ -192,6 +192,20 @@ gtag('config', 'G-MMW7708D4F');
 }
 @media(max-width:380px){.nav .menu{gap:3px!important;font-size:7px!important}.nav .menu>a,.nav .menu a[aria-current="page"]{font-size:7px!important}}
 </style>
+<style>
+/* Compact mobile navigation matching the Gallery page */
+@media(max-width:800px){
+  .nav .navin{width:100%!important;max-width:none!important;padding:16px 18px 22px!important;gap:20px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;flex-wrap:nowrap!important}
+  .nav .brand,.nav .home-brand{font-size:clamp(27px,7vw,34px)!important;line-height:1.05!important;letter-spacing:.025em!important;white-space:nowrap!important}
+  .nav .brand-subtitle{display:block!important;margin-top:5px!important;font-size:7px!important;letter-spacing:.18em!important}
+  .nav .menu{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important;gap:clamp(5px,2.4vw,10px)!important;width:100%!important;margin:0!important;padding:0!important;overflow:visible!important;white-space:nowrap!important;font-size:clamp(8px,2.45vw,11px)!important;line-height:1.2!important;letter-spacing:.025em!important}
+  .nav .menu>a,.nav .menu a[aria-current="page"]{display:inline-flex!important;flex:0 1 auto!important;width:auto!important;min-width:0!important;height:auto!important;max-width:none!important;margin:0!important;padding:0 0 4px!important;white-space:nowrap!important;overflow:visible!important;font-size:inherit!important;line-height:1.2!important;letter-spacing:inherit!important}
+}
+@media(max-width:360px){
+ .nav .navin{padding-left:12px!important;padding-right:12px!important}
+ .nav .menu{font-size:7.5px!important;gap:4px!important;letter-spacing:0!important}
+}
+</style>
 </head>
 <body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu<span class="brand-subtitle">Artist plastic și sculptor</span></a><nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html" aria-current="page">Expoziții</a><a class="about-nav" href="despre.html">Despre artist</a></nav></div></header>
