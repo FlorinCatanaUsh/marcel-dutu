@@ -194,6 +194,44 @@ gtag('config', 'G-MMW7708D4F');
   .works-gallery .work-info h2{font-size:clamp(13px,4.2vw,20px)!important;line-height:1.15!important;margin:0 0 5px!important}
   .works-gallery .work-info p{font-size:clamp(9px,2.8vw,12px)!important;line-height:1.25!important;margin:3px 0!important}
 }
+
+<style id="gallery-reference-spacing">
+/* Ajustări finale după modelul trimis: lucrări mai mari și rânduri mai apropiate */
+.section > .wrap > h1{
+  margin:0 0 28px!important;
+  line-height:1.08!important;
+}
+@media(max-width:620px){
+  .section{padding-top:24px!important;padding-bottom:36px!important}
+  .section > .wrap > h1{
+    font-size:clamp(34px,7.6vw,48px)!important;
+    line-height:1.08!important;
+    margin:0 0 24px!important;
+  }
+  .works-gallery{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    column-gap:clamp(10px,3.2vw,22px)!important;
+    row-gap:18px!important;
+    align-items:start!important;
+  }
+  .works-gallery .work-card{align-self:start!important}
+  .works-gallery .work-card img{
+    padding:8px!important;
+    box-shadow:0 8px 22px rgba(0,0,0,.09)!important;
+  }
+  .works-gallery .work-info{padding:8px 3px 0!important}
+  .works-gallery .work-info h2{
+    font-size:clamp(16px,4.6vw,25px)!important;
+    line-height:1.12!important;
+    margin:0 0 7px!important;
+  }
+  .works-gallery .work-info p{
+    font-size:clamp(10px,3.1vw,15px)!important;
+    line-height:1.28!important;
+    margin:3px 0!important;
+  }
+}
+</style>
 </style>
 </head>
 <body>
