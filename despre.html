@@ -325,10 +325,19 @@ gtag('config', 'G-MMW7708D4F');
 </main>
 
 <footer class="footer"><div class="wrap">© 2026 Marcel Duțu</div></footer>
-<style id="match-gallery-background">
-@media(max-width:800px){
- html,body{background:#f7f5f1!important;background-image:none!important}
- main,.section,.detail,.story,.exhibitions-intro,.exhibitions-gallery{background:transparent!important;background-image:none!important}
+<style id="force-gallery-cream-background">
+/* Fundalul simplu crem ca pe Galerie; anulează texturi/pseudo-elemente vechi */
+html,body{
+ background-color:#f7f5f1!important;
+ background-image:none!important;
+ background-attachment:initial!important;
+}
+body::before,body::after,html::before,html::after{
+ background-image:none!important;
+}
+main,.detail,.section,.story{
+ background-color:transparent!important;
+ background-image:none!important;
 }
 </style>
 </body>
