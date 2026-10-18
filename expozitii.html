@@ -206,7 +206,19 @@ gtag('config', 'G-MMW7708D4F');
  .nav .menu{font-size:7.5px!important;gap:4px!important;letter-spacing:0!important}
 }
 </style>
-</head>
+<style id="mobile-nav-one-row-final">
+@media screen and (max-width: 700px) {
+  header.nav .wrap.navin { box-sizing:border-box!important; width:100%!important; max-width:100%!important; padding:16px 12px 20px!important; gap:20px!important; }
+  header.nav .menu { box-sizing:border-box!important; display:flex!important; flex-direction:row!important; flex-wrap:nowrap!important; justify-content:space-between!important; align-items:center!important; gap:0!important; width:100%!important; min-width:0!important; margin:0!important; padding:0!important; white-space:nowrap!important; overflow:visible!important; font-size:clamp(7px,2.15vw,10px)!important; line-height:1.2!important; letter-spacing:0!important; }
+  header.nav .menu > a, header.nav .menu > a[aria-current="page"] { box-sizing:border-box!important; display:inline-flex!important; flex:0 1 auto!important; min-width:0!important; width:auto!important; max-width:none!important; margin:0!important; padding:0 0 4px!important; white-space:nowrap!important; font-size:inherit!important; line-height:1.2!important; letter-spacing:0!important; }
+  header.nav .brand { font-size:clamp(30px,7.8vw,40px)!important; line-height:1.05!important; }
+  header.nav .brand-subtitle { font-size:7px!important; letter-spacing:.16em!important; }
+}
+@media screen and (max-width:360px) {
+  header.nav .menu { font-size:6.7px!important; }
+  header.nav .wrap.navin { padding-left:9px!important; padding-right:9px!important; }
+}
+</style></head>
 <body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu<span class="brand-subtitle">Artist plastic și sculptor</span></a><nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html" aria-current="page">Expoziții</a><a class="about-nav" href="despre.html">Despre artist</a></nav></div></header>
 <main class="section">
