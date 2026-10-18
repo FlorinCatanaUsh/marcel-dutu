@@ -160,7 +160,30 @@ gtag('config', 'G-MMW7708D4F');
  .nav .menu>a{font-size:9px!important}
 }
 </style><style>.nav .brand-subtitle{display:block;margin-top:8px;font:400 10px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#716c64}@media(max-width:600px){.nav .brand-subtitle{font-size:9px;margin-top:7px}}</style>
-</head>
+<style>
+/* Mobile gallery: one artwork per row, like a focused exhibition */
+@media(max-width:620px){
+  .works-gallery{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:30px!important;width:100%!important}
+  .works-gallery .work-card{display:block!important;width:100%!important;min-width:0!important}
+  .works-gallery .work-card img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+  .works-gallery .work-info{padding:12px 4px 0!important}
+  .works-gallery .work-info h2{font-size:27px!important}
+  .works-gallery .work-info p{font-size:15px!important}
+  .section h1{font-size:clamp(34px,8vw,46px)!important;line-height:1.08!important;margin-bottom:28px!important}
+}
+/* Keep every navigation tab visible, including the current page */
+@media(max-width:800px){
+  .nav .navin{display:flex!important;flex-direction:column!important;align-items:flex-start!important;width:100%!important;padding:20px 18px 24px!important;gap:22px!important}
+  .nav .menu{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;justify-content:space-between!important;align-items:center!important;gap:clamp(5px,1.8vw,12px)!important;width:100%!important;margin:0!important;padding:0!important;overflow:visible!important}
+  .nav .menu>a,.nav .menu a[aria-current="page"]{display:inline-flex!important;flex:0 1 auto!important;width:auto!important;height:auto!important;min-width:0!important;max-width:none!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;padding:5px 0!important;margin:0!important;overflow:visible!important;white-space:nowrap!important;font-size:clamp(8px,2.25vw,13px)!important;line-height:1.2!important;border-bottom:1px solid transparent!important}
+  .nav .menu a picture{display:none!important}
+}
+@media(max-width:360px){
+ .nav .navin{padding-left:12px!important;padding-right:12px!important}
+ .nav .menu{gap:4px!important}
+ .nav .menu>a,.nav .menu a[aria-current="page"]{font-size:8px!important;letter-spacing:-.02em!important}
+}
+</style></head>
 <body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu<span class="brand-subtitle">Artist plastic și sculptor</span></a><nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html" aria-current="page">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html">Expoziții</a><a class="about-nav" href="despre.html">Despre artist</a></nav></div></header>
 <main class="section"><div class="wrap">
