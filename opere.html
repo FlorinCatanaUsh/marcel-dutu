@@ -183,7 +183,19 @@ gtag('config', 'G-MMW7708D4F');
  .nav .menu{gap:4px!important}
  .nav .menu>a,.nav .menu a[aria-current="page"]{font-size:8px!important;letter-spacing:-.02em!important}
 }
-</style></head>
+</style>
+<style id="gallery-mobile-three-column-layout">
+/* Pe telefon, afișează lucrările în grilă cu trei coloane, ca în aspectul dorit */
+@media(max-width:620px){
+  .works-gallery{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px 12px!important;width:100%!important}
+  .works-gallery .work-card{width:100%!important;min-width:0!important}
+  .works-gallery .work-card img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;padding:6px!important}
+  .works-gallery .work-info{padding:8px 2px 0!important}
+  .works-gallery .work-info h2{font-size:clamp(13px,4.2vw,20px)!important;line-height:1.15!important;margin:0 0 5px!important}
+  .works-gallery .work-info p{font-size:clamp(9px,2.8vw,12px)!important;line-height:1.25!important;margin:3px 0!important}
+}
+</style>
+</head>
 <body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html" aria-label="Marcel Duțu — prima pagină">Marcel Duțu<span class="brand-subtitle">Artist plastic și sculptor</span></a><nav class="menu" aria-label="Navigație principală"><a class="home-nav" href="index.html">Prima pagină</a><a class="gallery-nav" href="opere.html" aria-current="page">Galerie</a><a class="sculpture-nav" href="sculptura.html">Sculptură</a><a class="exhibitions-nav" href="expozitii.html">Expoziții</a><a class="about-nav" href="despre.html">Despre artist</a></nav></div></header>
 <main class="section"><div class="wrap">
